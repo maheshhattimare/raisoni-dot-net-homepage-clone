@@ -18,6 +18,9 @@
     transparent
   ) !important;
 }
+.navbar-nav li > a {
+  margin-right: 10px;
+}
 .custom-btn {
   font-size: 14px;
   padding: 8px 10px;
@@ -50,7 +53,6 @@
   padding: 6px;
   position: fixed;
   z-index: 10;
-  /* right: 0; */
 }
 .enquire-fab {
   top: 50%;
@@ -58,16 +60,16 @@
   transform: rotateZ(-90deg);
 }
 .whatapp-fab {
-  top: 60%;
+  top: 61%;
   right: -113px;
   transition: right 0.4s ease;
-  width: 144px;
+  width: 146px;
 }
 .mai-fab {
-  top: 66%;
+  top: 67%;
   right: -113px;
   transition: right 0.3s ease;
-  width: 144px;
+  width: 146px;
 }
 .whatapp-fab:hover {
   right: 0;
@@ -86,20 +88,20 @@
   right: 30px;
   border-radius: 50%;
   z-index: 10;
+  cursor: pointer;
 }
 .ninaa-hover {
-  font-size: 13px;
-  padding: 10px 30px 10px 10px;
+  font-size: 14px;
   position: fixed;
-  bottom: 30px;
-  right: 90px;
-  color: grey;
-  font-weight: 300;
+  bottom: 25px;
+  right: 93px;
+  color: #141414;
+  font-weight: 400;
   background-color: #fff;
   z-index: 10;
   letter-spacing: 1.1px;
   border-radius: 5px;
-  display: none;
+  /* display: none; */
 }
 /* fab end */
 /*header end*/
@@ -133,8 +135,6 @@
 .grey-hover img:hover {
   filter: grayscale(0);
 }
-
-/*Our University Network start*/
 
 /* student life & campus infra start */
 .campus-grid-container {
@@ -243,7 +243,7 @@
   display: grid;
   gap: 10px;
   grid-template-columns: 20% 15% 30% 15% 20%;
-  grid-template-rows: 230px 230px;
+  grid-template-rows: 190px 190px;
   /* grid-template-rows: 50% 50%; */
 }
 .gallery-img {
@@ -278,6 +278,7 @@
   grid-row-start: 1;
   grid-row-end: 3;
 }
+
 /* image gallery end  */
 
 /* kimba section start */
@@ -294,11 +295,12 @@
 }
 /* insta profile  start*/
 .profile-gradient {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   padding: 4px;
   background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+  cursor: pointer;
 }
 .insta-profile {
   width: 100%;
@@ -314,7 +316,7 @@ footer {
   background-color: #5c0f8b;
 }
 .accordion-btn {
-  font-size: 19px;
+  font-size: 18px;
   color: #af71d5;
   letter-spacing: 2px;
 }
@@ -349,7 +351,7 @@ footer {
   padding-top: 5px;
   border: 1px solid red;
   transition: all 0.3s ease;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 .social-icons:hover {
   background-color: #000;
@@ -365,7 +367,7 @@ footer {
   .university-section span {
     font-size: 13px;
   }
-  .navbar-nav {
+  /* .navbar-nav {
     background-color: #fff !important;
     padding: 10px;
   }
@@ -374,27 +376,36 @@ footer {
   }
   .navbar-nav li {
     border-bottom: 1px solid #999;
-  }
+  } */
   .profile-gradient {
     width: 80px;
     height: 80px;
   }
   .accordion-btn {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.5px;
+  }
+  .ninaa-assistant img {
+    width: 35px;
+    height: 35px;
+  }
+  .ninaa-hover {
+    font-size: 11px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .navbar-nav {
     background-color: #fff;
-    padding: 10px;
+    padding: 10px 15px;
     margin-top: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
   }
   .navbar-nav li > a {
     color: #000 !important;
     padding: 8px;
+    font-weight: 500;
   }
   .navbar-nav li {
     border-bottom: 1px solid rgba(0, 0, 0, 0.09);
@@ -404,11 +415,20 @@ footer {
     background-color: rgba(0, 0, 0, 0.05);
     border: 0;
   }
+  .nav-item-sub-items li > a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333 !important;
+  }
+  .nav-item-sub-items .list-group-item:hover a {
+    color: #5c0f8b !important;
+  }
+
   .campus-grid-container {
     grid-template-columns: 1fr 1fr;
   }
   .accordion-btn {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
   }
 }
