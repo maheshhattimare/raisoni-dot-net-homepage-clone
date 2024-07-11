@@ -52,18 +52,45 @@
                         </ul>
                      </div>
                      <!-- drop btn end -->
-                     <div
-                        class="collapse navbar-collapse justify-content-end"
-                        id="navbarNav"
-                        >
-                        <ul class="navbar-nav fw-normal">
 
+
+                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                        <!-- large screen nav bar  -->
+                        <ul class="navbar-nav fw-normal d-none d-lg-flex justify-content-end">
+
+                            <li class="nav-item position-relative" id="sm-nav-item1">
+                              <a href="#" class=" nav-link active ">About</a>
+                              <div class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap" id="sm-nav-item-list1" style="display: none;max-width:200px">
+                                 <a href="#" class="list-group-item list-group-item-action">Overview</a>
+                                 <a href="#" class="list-group-item list-group-item-action ">Vision - Mission</a>
+                                 <a href="#" class="list-group-item list-group-item-action">Leadership</a>
+                                 <a href="#" class="list-group-item list-group-item-action">Administration</a>
+                                 <a href="#" class="list-group-item list-group-item-action">Institution list</a>
+                                 <a href="#" class="list-group-item list-group-item-action">Labs</a>
+                                 <a href="#" class="list-group-item list-group-item-action">Library</a>
+                               </div>
+                           </li>
+                           <li class="nav-item position-relative" id="sm-nav-item2">
+                              <a href="#" class="nav-link active">Admission</a>
+                              <div class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap" id="sm-nav-item-list2" style="display: none;max-width:200px">
+                                 <a href="#" class="list-group-item list-group-item-action">Student Education loan</a>
+                                 <a href="#" class="list-group-item list-group-item-action">Admission process</a>
+                                 <a href="#" class="list-group-item list-group-item-action">Eligibility</a>
+                                 <a href="#" class="list-group-item list-group-item-action">Admission Helpline</a>
+                                 <a href="#" class="list-group-item list-group-item-action">Fees structure</a>
+                               </div>
+                           </li>
+                        </ul>
+
+
+                        <!-- small screen nav bar  -->
+                        <ul class="navbar-nav fw-normal d-block d-lg-none">
                            <li class="nav-item">
-                              <a href="#" class="d-none d-lg-block nav-link active">About</a>
-                              <a class="nav-link active accordion-button collapsed d-block d-lg-none my-1" aria-current="page" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#nav-item-1" aria-expanded="false" aria-controls="nav-item-1">
+                              <a class="nav-link active accordion-button collapsed my-1" aria-current="page" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#nav-item-1" aria-expanded="false" aria-controls="nav-item-1">
                                  About
                               </a>
-                              <ul class="list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items" id="nav-item-1">
+                              <ul class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items" id="nav-item-1">
                                  <li class="list-group-item"><a href="#">Overview</a></li>
                                  <li class="list-group-item"><a href="#">Vision</a></li>
                                  <li class="list-group-item"><a href="#">Mission</a></li>
@@ -71,83 +98,11 @@
                                  <li class="list-group-item"><a href="#">Administration</a></li>
                               </ul>
                            </li>
-
                            <li class="nav-item">
-                              <a href="#" class="d-none d-lg-block nav-link active">Admission</a>
-                              <a class="nav-link active accordion-button collapsed d-block d-lg-none my-1" aria-current="page" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#nav-item-2" aria-expanded="false" aria-controls="nav-item-2">
-                                 Admission
+                              <a class="nav-link active accordion-button collapsed my-1" aria-current="page" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#nav-item-2" aria-expanded="false" aria-controls="nav-item-2">
+                                 About
                               </a>
-                              <ul class="list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items" id="nav-item-2">
-                                 <li class="list-group-item"><a href="#">Overview</a></li>
-                                 <li class="list-group-item"><a href="#">Vision</a></li>
-                                 <li class="list-group-item"><a href="#">Mission</a></li>
-                                 <li class="list-group-item"><a href="#">Leadership</a></li>
-                                 <li class="list-group-item"><a href="#">Administration</a></li>
-                              </ul>
-                           </li>
-
-                           <li class="nav-item">
-                              <a href="#" class="d-none d-lg-block nav-link active">Research</a>
-                              <a class="nav-link active accordion-button collapsed d-block d-lg-none my-1" aria-current="page" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#nav-item-3" aria-expanded="false" aria-controls="nav-item-3">
-                                 Research
-                              </a>
-                              <ul class="list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items" id="nav-item-3">
-                                 <li class="list-group-item"><a href="#">Overview</a></li>
-                                 <li class="list-group-item"><a href="#">Vision</a></li>
-                                 <li class="list-group-item"><a href="#">Mission</a></li>
-                                 <li class="list-group-item"><a href="#">Leadership</a></li>
-                                 <li class="list-group-item"><a href="#">Administration</a></li>
-                              </ul>
-                           </li>
-
-                           <li class="nav-item">
-                              <a href="#" class="d-none d-lg-block nav-link active">Media</a>
-                              <a class="nav-link active accordion-button collapsed d-block d-lg-none my-1" aria-current="page" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#nav-item-4" aria-expanded="false" aria-controls="nav-item-4">
-                                 Media
-                              </a>
-                              <ul class="list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items" id="nav-item-4">
-                                 <li class="list-group-item"><a href="#">Overview</a></li>
-                                 <li class="list-group-item"><a href="#">Vision</a></li>
-                                 <li class="list-group-item"><a href="#">Mission</a></li>
-                                 <li class="list-group-item"><a href="#">Leadership</a></li>
-                                 <li class="list-group-item"><a href="#">Administration</a></li>
-                              </ul>
-                           </li>
-
-                           <li class="nav-item">
-                              <a href="#" class="d-none d-lg-block nav-link active">Campus life</a>
-                              <a class="nav-link active accordion-button collapsed d-block d-lg-none my-1" aria-current="page" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#nav-item-5" aria-expanded="false" aria-controls="nav-item-5">
-                                 Campus life
-                              </a>
-                              <ul class="list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items" id="nav-item-5">
-                                 <li class="list-group-item"><a href="#">Overview</a></li>
-                                 <li class="list-group-item"><a href="#">Vision</a></li>
-                                 <li class="list-group-item"><a href="#">Mission</a></li>
-                                 <li class="list-group-item"><a href="#">Leadership</a></li>
-                                 <li class="list-group-item"><a href="#">Administration</a></li>
-                              </ul>
-                           </li>
-
-                           <li class="nav-item">
-                              <a href="#" class="d-none d-lg-block nav-link active">Events</a>
-                              <a class="nav-link active accordion-button collapsed d-block d-lg-none my-1" aria-current="page" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#nav-item-6" aria-expanded="false" aria-controls="nav-item-6">
-                                 Events
-                              </a>
-                              <ul class="list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items" id="nav-item-6">
-                                 <li class="list-group-item"><a href="#">Overview</a></li>
-                                 <li class="list-group-item"><a href="#">Vision</a></li>
-                                 <li class="list-group-item"><a href="#">Mission</a></li>
-                                 <li class="list-group-item"><a href="#">Leadership</a></li>
-                                 <li class="list-group-item"><a href="#">Administration</a></li>
-                              </ul>
-                           </li>
-
-                           <li class="nav-item border-0">
-                              <a href="#" class="d-none d-lg-block nav-link active">Contact</a>
-                              <a class="nav-link active accordion-button collapsed d-block d-lg-none my-1" aria-current="page" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#nav-item-7" aria-expanded="false" aria-controls="nav-item-7">
-                                 Contact
-                              </a>
-                              <ul class="list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items" id="nav-item-7">
+                              <ul class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items" id="nav-item-2">
                                  <li class="list-group-item"><a href="#">Overview</a></li>
                                  <li class="list-group-item"><a href="#">Vision</a></li>
                                  <li class="list-group-item"><a href="#">Mission</a></li>
@@ -156,6 +111,10 @@
                               </ul>
                            </li>
                         </ul>
+
+
+
+
                      </div>
                   </div>
                </nav>
@@ -172,7 +131,7 @@
                <img src="assets/images/niaa.png" alt="ninaa">
             </div >
             <div class="shadow ninaa-hover" id="nina-hover">
-               <button type="button" id="assistant-close-btn" class="btn-close text-start p-1 bg-danger" aria-label="Close" style="font-size: 10px;"></button>
+               <button type="button" id="assistant-close-btn" class="text-start p-1 bg-danger border-0 outline-0 rounded-circle text-white d-flex" style="font-size: 10px;width: 15px;height:15px"><i class="fa-solid fa-xmark"></i></button>
                <p class="px-4">Hey! I am Ninaa... Your<br>Admission assistant.</p>
             </div>
             <!-- floating action buttons end  -->
@@ -387,7 +346,7 @@
                   <div class="row">
                      <div class="col-12 mt-3 mb-4">
                         <div class="d-flex overflow-auto p-3">
-                           <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                           <div class="card shadow border-0 me-3 custom-card" style="width: 17rem;">
                               <img src="assets/images/civil.png" class="card-img-top" alt="...">
                               <div class="card-body">
                                  <div class="row justify-content-between">

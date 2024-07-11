@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /*#5C0F8B*/
 .text-purple {
   color: #5c0f8b !important;
@@ -18,9 +19,24 @@
     transparent
   ) !important;
 }
+/* large screen nav bar start */
 .navbar-nav li > a {
   margin-right: 10px;
 }
+
+.sm-nav-item-list-all a{
+  font-size: 13px;
+  font-weight: 500;
+  color:#333 !important;
+  border: 0;
+}
+.sm-nav-item-list-all a:hover{
+  color: #5c0f8b !important;
+  background-color: rgb(247, 245, 245);
+}
+
+/* large screen nav bar end  */
+
 .custom-btn {
   font-size: 14px;
   padding: 8px 10px;
@@ -101,7 +117,6 @@
   z-index: 10;
   letter-spacing: 1.1px;
   border-radius: 5px;
-  /* display: none; */
 }
 /* fab end */
 /*header end*/
@@ -225,7 +240,7 @@
 /*heading-3 end*/
 
 /*diploma programs start*/
-.cutom-card .card-body h5 {
+.custom-card .card-body h5 {
   font-size: 16px;
   font-weight: 500;
 }
@@ -431,4 +446,18 @@ footer {
     font-size: 16px;
     letter-spacing: 1px;
   }
+}
+
+/* for max width 992  */
+@media screen and (max-width:992px) {
+
+  /* .navbar-nav .nav-item{
+  transition: all 0.3s ease;
+}
+.navbar-nav .nav-item:hover{
+  content: '';
+  background-color: #ffffff51;
+  border-radius: 30px;
+  padding-left: 4px;
+} */
 }
