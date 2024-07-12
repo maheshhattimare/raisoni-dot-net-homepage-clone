@@ -19,22 +19,23 @@
     transparent
   ) !important;
 }
+
 /* large screen nav bar start */
 .navbar-nav li > a {
   margin-right: 10px;
-}
 
+}
 .sm-nav-item-list-all a{
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 500;
   color:#333 !important;
   border: 0;
+  transition: all 0.2s ease;
 }
 .sm-nav-item-list-all a:hover{
   color: #5c0f8b !important;
   background-color: rgb(247, 245, 245);
 }
-
 /* large screen nav bar end  */
 
 .custom-btn {
@@ -118,6 +119,24 @@
   letter-spacing: 1.1px;
   border-radius: 5px;
 }
+/* animation  */
+#nina-chat-block{
+  bottom: -100px;
+  opacity: 0;
+}
+#nina-chat-block.in-amin{
+  animation-name: inAnim;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes inAnim {
+  100%{
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+
 /* fab end */
 /*header end*/
 
