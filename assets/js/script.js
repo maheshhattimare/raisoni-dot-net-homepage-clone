@@ -4,7 +4,7 @@ const assistantCloseBtn = document.getElementById("assistant-close-btn");
 const ninaChatCloseBtn = document.getElementById("nina-chat-close-btn");
 const ninaChatBlock = document.getElementById('nina-chat-block');
 
-//sm-nav 
+//sm-nav
 const smallNavItem1 = document.getElementById("sm-nav-item1");
 const smallNavItemList1 = document.getElementById("sm-nav-item-list1");
 
@@ -25,7 +25,7 @@ const smallNavItemList6 = document.getElementById("sm-nav-item-list6");
 
 //nina assistant
 window.document.addEventListener("DOMContentLoaded", () => {
-    ninaHover.style.display = "block";
+  ninaHover.style.display = "block";
 });
 assistantCloseBtn.addEventListener("click", () => {
   ninaHover.style.display = "none";
@@ -36,8 +36,10 @@ ninaAssistant.addEventListener('click',()=>{
   ninaChatBlock.classList.add('in-amin')
 });
 ninaChatCloseBtn.addEventListener('click',()=>{
-  ninaChatBlock.style.display='none';
+ ninaChatBlock.style.display='none';
 });
+
+
 // nina assistant end
 
 // nav items start
@@ -82,8 +84,3 @@ smallNavItem6.addEventListener('mouseenter',()=>{
 smallNavItem6.addEventListener('mouseleave',()=>{
   smallNavItemList6.style.display='none';
 });
-
-
-
-
-
