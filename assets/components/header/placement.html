@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+  crossorigin="anonymous"
+  />
+
+
+  <link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+</head>
+<body>
+  <header>
+    <!-- header section start  -->
+    <section class="position-relative overflow-hidden">
+      <div>
+        <!-- background img -->
+        <img
+        src="/assets/images/ghrce.png"
+        class="img-fluid position-relative"
+        style="
+        max-height: 30vh;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(70%);
+        "
+        />
+        <div class="img-white-bg position-absolute top-0 start-0 w-100 h-100" style="background-color: #3c3c3ca6;"></div>
+
+        <div
+        class="container-fluid text-center position-absolute top-50 start-0"
+        >
+        <div class="row text-center">
+          <div class="col-12 text-center">
+            <h4 class="h2 fw-medium text-white">Placement</h4>
+          </div>
+          <div class="col-12 text-center mt-2" >
+            <nav aria-label="breadcrumb" >
+              <ol class="breadcrumb-item-hover breadcrumb justify-content-center text-white fs-6 text-decoration-none" >
+                <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Campus Life</a></li>
+                <li class="breadcrumb-item active text-white" aria-current="page">Placements</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar  -->
+    <nav
+    class="navbar navbar-expand-lg navbar-dark bg-dark custom-nav fixed-top"
+    >
+    <div class="container mt-2">
+      <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a href="/index.html"><img src="/assets/images/logo.png" class="pe-sm-4 img-fluid raisoni-logo" style="max-width: 130px;"/></a>
+    <!-- drop btn start-->
+    <div class="dropdown">
+      <button
+      class="custom-btn dropdown-toggle border-0"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+      style="color: #5c0f8b; background-color: #fff"
+      >
+      Academics
+    </button>
+    <div class="dropdown-menu bg-warning mt-1 p-2">Comming soon...</div>
+  </div>
+  <!-- drop btn end -->
+  <div
+  class="collapse navbar-collapse justify-content-end"
+  id="navbarNav"
+  >
+  <!-- large screen nav bar  -->
+  <ul
+  class="navbar-nav fw-normal d-none d-lg-flex justify-content-end"
+  >
+  <li class="nav-item position-relative lg-nav-item">
+    <a href="#" class="nav-link active">About</a>
+    <div
+    class="list-group position-absolute start-0 lg-nav-item-list shadow text-nowrap"
+    style="display: none; min-width: 200px"
+    >
+    <a href="#" class="list-group-item list-group-item-action"
+    >Overview</a
+    >
+    <a href="#" class="list-group-item list-group-item-action"
+    >Vision - Mission</a
+    >
+    <a href="#" class="list-group-item list-group-item-action"
+    >Leadership</a
+    >
+    <a href="#" class="list-group-item list-group-item-action"
+    >Administration</a
+    >
+    <a href="#" class="list-group-item list-group-item-action"
+    >Institution list</a
+    >
+    <a href="#" class="list-group-item list-group-item-action"
+    >Labs</a
+    >
+    <a href="#" class="list-group-item list-group-item-action"
+    >Library</a
+    >
+  </div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+  <a href="#" class="nav-link active">Admission</a>
+  <div
+  class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+  style="display: none; min-width: 200px"
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Student Education loan</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Admission process</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Eligibility</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Admission Helpline</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Fees structure</a
+  >
+</div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+  <a href="#" class="nav-link active">Research</a>
+  <div
+  class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+  style="display: none; min-width: 200px"
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Research Excellence</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >GHR Labs & Research<br />Center</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Patent & Publication</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Partnerships</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Research Grant</a
+  >
+</div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+  <a href="#" class="nav-link active">Media</a>
+  <div
+  class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+  style="display: none; min-width: 200px"
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Blogs-Section</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Media Coverage</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Campus Buzz</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Photo Gallery</a
+  >
+</div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+  <a href="#" class="nav-link active">Campus Life</a>
+  <div
+  class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+  style="display: none; min-width: 200px"
+  >
+  <a
+  href="/assets/components/header/campus-life.html"
+  class="list-group-item list-group-item-action"
+  >Placement</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Campus facilities</a
+  >
+  <a href="/assets/components/header/student-clubs.html" class="list-group-item list-group-item-action"
+  >Student Clubs</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Hostels</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Sports</a
+  >
+  <a href="/assets/components/header/safety-securities.html" class="list-group-item list-group-item-action"
+  >Safety & Securities</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Transportation</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Classroom</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >E-learning</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Health-Services</a
+  >
+</div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+  <a href="#" class="nav-link active">Events</a>
+  <div
+  class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+  style="display: none; min-width: 200px"
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Dhammal Dandiya</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Kashti</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Antaragni</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >RPL</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Shiv Mahotsav</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Ganesh Utsav</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Graduation Ceremony</a
+  >
+  <a href="#" class="list-group-item list-group-item-action"
+  >Startup Road Show</a
+  >
+</div>
+</li>
+<li class="nav-item position-relative">
+  <a href="#" class="nav-link active">Contact</a>
+</li>
+</ul>
+<!-- small screen nav bar  -->
+<ul class="navbar-nav fw-normal d-block d-lg-none">
+  <li class="nav-item">
+    <a
+    class="nav-link active accordion-button collapsed my-1"
+    aria-current="page"
+    href="#"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#nav-item-1"
+    aria-expanded="false"
+    aria-controls="nav-item-1"
+    >
+    About
+  </a>
+  <ul
+  class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+  id="nav-item-1"
+  >
+  <li class="list-group-item"><a href="#">Overview</a></li>
+  <li class="list-group-item">
+    <a href="#">Vision-Mission</a>
+  </li>
+  <li class="list-group-item"><a href="#">Leadership</a></li>
+  <li class="list-group-item">
+    <a href="#">Administration</a>
+  </li>
+  <li class="list-group-item">
+    <a href="#">Institution List</a>
+  </li>
+  <li class="list-group-item"><a href="#">Labs</a></li>
+  <li class="list-group-item"><a href="#">Library</a></li>
+</ul>
+</li>
+<li class="nav-item">
+  <a
+  class="nav-link active accordion-button collapsed my-1"
+  aria-current="page"
+  href="#"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#nav-item-2"
+  aria-expanded="false"
+  aria-controls="nav-item-2"
+  >
+  Addmission
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-2"
+>
+<li class="list-group-item">
+  <a href="#">Student Education loan</a>
+</li>
+<li class="list-group-item">
+  <a href="#">Admission Procedure</a>
+</li>
+<li class="list-group-item"><a href="#">Eligibility</a></li>
+<li class="list-group-item">
+  <a href="#">Admission Helpline</a>
+</li>
+<li class="list-group-item">
+  <a href="#">Fees Structure</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+  <a
+  class="nav-link active accordion-button collapsed my-1"
+  aria-current="page"
+  href="#"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#nav-item-3"
+  aria-expanded="false"
+  aria-controls="nav-item-3"
+  >
+  Research
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-3"
+>
+<li class="list-group-item">
+  <a href="#">Research Excellence</a>
+</li>
+<li class="list-group-item">
+  <a href="#">GHR Labs & Research Center</a>
+</li>
+<li class="list-group-item">
+  <a href="#">Patent & Publication</a>
+</li>
+<li class="list-group-item"><a href="#">Partnerships</a></li>
+<li class="list-group-item">
+  <a href="#">Research Grant</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+  <a
+  class="nav-link active accordion-button collapsed my-1"
+  aria-current="page"
+  href="#"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#nav-item-4"
+  aria-expanded="false"
+  aria-controls="nav-item-4"
+  >
+  Media
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-4"
+>
+<li class="list-group-item"><a href="#">Blog-Section</a></li>
+<li class="list-group-item">
+  <a href="#">Media Coverage</a>
+</li>
+<li class="list-group-item"><a href="#">campus Buzz</a></li>
+<li class="list-group-item"><a href="#">Partnerships</a></li>
+<li class="list-group-item"><a href="#">Photo Gallery</a></li>
+</ul>
+</li>
+<li class="nav-item">
+  <a
+  class="nav-link active accordion-button collapsed my-1"
+  aria-current="page"
+  href="#"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#nav-item-5"
+  aria-expanded="false"
+  aria-controls="nav-item-5"
+  >
+  Campus Life
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-5"
+>
+<li class="list-group-item"><a href="#">Placement</a></li>
+<li class="list-group-item">
+  <a href="#">Campus facilities</a>
+</li>
+<li class="list-group-item"><a href="#">Student Clubs</a></li>
+<li class="list-group-item"><a href="#">Hostels</a></li>
+<li class="list-group-item"><a href="#">Sports</a></li>
+<li class="list-group-item">
+  <a href="#">safety & Securities</a>
+</li>
+<li class="list-group-item">
+  <a href="#">Transportation</a>
+</li>
+<li class="list-group-item"><a href="#">Classroom</a></li>
+<li class="list-group-item"><a href="#">E-learning</a></li>
+<li class="list-group-item">
+  <a href="#">Health SErvices</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+  <a
+  class="nav-link active accordion-button collapsed my-1"
+  aria-current="page"
+  href="#"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#nav-item-6"
+  aria-expanded="false"
+  aria-controls="nav-item-6"
+  >
+  Events
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-6"
+>
+<li class="list-group-item">
+  <a href="#">Dhamaal Dandiya</a>
+</li>
+<li class="list-group-item"><a href="#">Kashti</a></li>
+<li class="list-group-item"><a href="#">Antaragni</a></li>
+<li class="list-group-item"><a href="#">RPL</a></li>
+<li class="list-group-item"><a href="#">Shiv Mahotsav</a></li>
+<li class="list-group-item"><a href="#">Ganesh Utsav</a></li>
+<li class="list-group-item">
+  <a href="#">Graduation Ceremony</a>
+</li>
+<li class="list-group-item">
+  <a href="#">Startup Road Show</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+  <a
+  class="nav-link active accordion-button collapsed my-1"
+  href="#"
+  >Contact
+</a>
+</li>
+</ul>
+</div>
+</div>
+    </nav>
+</div>
+</section>
+
+</header>
+
+<main>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="heading-2 mb-3 text-center text-md-start">About Placement</h3>
+        <p style="font-size: 15px;color:grey;font-weight:300;line-height:1.8">"Raisoni Institutes consistently attracts the finest faculty and the best of students for its Bachelors and Master Program. The Institutes have a rich tradition of pursuing excellence and has continually re-invented itself in terms of academic programs, research and infrastructure. Students are exposed to challenging research based academics and host of sports, cultural and organizational activities on its vibrant campuses. The presence of the world class facilities, institute-industry collaborations, interdisciplinary research facilities and industrial training opportunities help students to excel and be prepared for the competitive world. In the last twenty-two years, Raisoni Institutions has produced many well-known alumni, whose contributions to the corporate & society have been significant. We highly value our partnership with recruiters, alumni and friends of Raisoni Institutes and are committed to making your recruiting experience productive and positive. I invite the recruiting organizations and graduating students to find the best match between their needs and capabilities.</p>
+
+        <p style="font-size: 15px;color:grey;font-weight:300;line-height:1.8">Students at Raisoni Institutes continuously undergo Soft Skill and Cognitive skill training apart from their academics. Regular sessions of aptitude development are being held at each campus. Students in each semester undergo an assessment to test if they have gained knowledge and capabilities to match the ever growing expectation of the corporate world. At Raisoni Institutes we keep organizing various training programs and sessions by industry experts on latest technologies and industry expectations. This help enhancing the knowledge but also helps in managing the expectation of the students and their approach towards their life.</p>
+
+
+        <h3 class="heading-2 my-3 text-center text-md-start">Highlights</h3>
+        <ul type="square" style="font-size: 15px;color:grey;font-weight:300;line-height:2">
+          <li>Flagship institute of Raisoni Group is ranked 67th NIRF</li>
+          <li>Indutry oriented Skill Development of students.</li>
+          <li>100+ recruiters for session 2018-19.</li>
+          <li>Successfully Conducted 5 Major Job Fairs.</li>
+          <li>Provides Campus Recruitment Training & pre assessment exam for students.</li>
+          <li>45000 + Alumni Network</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-12">
+        <h3 class="heading-2 mt-2 text-center text-md-start">Recruitment Process</h3>
+      </div>
+
+      <div class="col-md-6">
+        <div class="step-list d-flex align-items-center ">
+          <div class="step-number text-center pt-3 me-4">
+           <p class="fw-normal mb-0 text-muted">STEP</p>
+           <span class="fs-4 fw-bold">1</span>
+         </div>
+         <div class="step-text fw-normal text-muted mt-2"><p>Online Students Registration</p></div>
+       </div>
+     </div>
+     <div class="col-md-6">
+      <div class="step-list d-flex align-items-center ">
+        <div class="step-number text-center pt-3 me-4">
+         <p class="fw-normal mb-0 text-muted">STEP</p>
+         <span class="fs-4 fw-bold">2</span>
+       </div>
+       <div class="step-text fw-normal text-muted mt-2"><p>Invitation to Companies for Campus Placement Alumni Involvement Industry Connect through Industry Institute Interaction Cell</p></div>
+     </div>
+   </div>
+   <div class="col-md-6">
+    <div class="step-list d-flex align-items-center ">
+      <div class="step-number text-center pt-3 me-4">
+       <p class="fw-normal mb-0 text-muted">STEP</p>
+       <span class="fs-4 fw-bold">3</span>
+     </div>
+     <div class="step-text fw-normal text-muted mt-2"><p>Companies willing to conduct Campus; connects us along with all relevant details like Job Profile, Job Description, Job Location, Package, etc.</p></div>
+   </div>
+ </div>
+ <div class="col-md-6">
+  <div class="step-list d-flex align-items-center ">
+    <div class="step-number text-center pt-3 me-4">
+     <p class="fw-normal mb-0 text-muted">STEP</p>
+     <span class="fs-4 fw-bold">4</span>
+   </div>
+   <div class="step-text fw-normal text-muted mt-2"><p>Campus Placement Details are shared with students and students are asked to nominate themselves for teh said company and profile.</p></div>
+ </div>
+</div>
+<div class="col-md-6">
+  <div class="step-list d-flex align-items-center ">
+    <div class="step-number text-center pt-3 me-4">
+     <p class="fw-normal mb-0 text-muted">STEP</p>
+     <span class="fs-4 fw-bold">5</span>
+   </div>
+   <div class="step-text fw-normal text-muted mt-2"><p>The Results of the campus recruitment drive is shared with the College.</p></div>
+ </div>
+</div>
+<div class="col-md-6">
+  <div class="step-list d-flex align-items-center ">
+    <div class="step-number text-center pt-3 me-4">
+     <p class="fw-normal mb-0 text-muted">STEP</p>
+     <span class="fs-3 fw-bold">6</span>
+   </div>
+   <div class="step-text fw-normal text-muted mt-2"><p>Company Conducts the screening process which usually includes Aptitude Test, Group Discussion, Personal Interview</p></div>
+ </div>
+</div>
+<div class="col-md-6">
+  <div class="step-list d-flex align-items-center ">
+    <div class="step-number text-center pt-3 me-4">
+     <p class="fw-normal mb-0 text-muted">STEP</p>
+     <span class="fs-3 fw-bold">7</span>
+   </div>
+   <div class="step-text fw-normal text-muted mt-2"><p>The Results of the campus recruitment drive is shared with the College.</p></div>
+ </div>
+</div>
+<div class="col-md-6">
+  <div class="step-list d-flex align-items-center ">
+    <div class="step-number text-center pt-3 me-4">
+     <p class="fw-normal mb-0 text-muted">STEP</p>
+     <span class="fs-3 fw-bold">8</span>
+   </div>
+   <div class="step-text fw-normal text-muted mt-2"><p>At a future date - the joining dates are informed by company to the college & the shortlisted students.</p></div>
+ </div>
+</div>
+
+
+</div>
+<!-- Placement Team -->
+<div class="row mt-4 justify-content-between g-4">
+  <div class="col-12">
+    <h3 class="heading-2 mb-2 text-center text-md-start">Placement Team</h3>
+  </div>
+  <div class="col-md-6">
+    <div class="card p-3 p-team-card-hover">
+      <div class="row align-items-center">
+        <div class="col-4" data-aos="fade-right" data-aos-duration="600">
+          <img src="/assets/images/gurpal-singh.png" alt="..." class="img-fluid w-100 h-100">
+        </div>
+        <div class="col-8 fs-6 fw-light text-muted" data-aos="fade-left" data-aos-duration="600">
+          <p class="fs-5 text-purple mb-1">Gurpal Singh</p>
+          <p class="text-purple mb-1">Head - Training & Placement</p>
+          <p><span class="fw-bold">Mob No:</span> 7020440527</p>
+          <p><span class="fw-bold">Email ID:</span> rgiplacement@raisoni.net</p>
+          <p style="font-size: 14px;">gurpal.singh@raisoni.net</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card p-3 p-team-card-hover">
+      <div class="row align-items-center">
+        <div class="col-4" data-aos="fade-right" data-aos-duration="600">
+          <img src="/assets/images/tejas-kumbhare.avif" alt="..." class="img-fluid w-100 h-100">
+        </div>
+        <div class="col-8 fs-6 fw-light text-muted" data-aos="fade-left" data-aos-duration="600">
+          <p class="fs-5 text-purple mb-1">Mr. Tejas Kumbhare</p>
+          <p class="text-purple mb-1">Placement Officer</p>
+          <p><span class="fw-bold">Mob No:</span> 9834551875</p>
+          <p><span class="fw-bold">Mob No:</span> 77740094484</p>
+          <p><span class="fw-bold">Email ID:</span> tejas.kumbhare@raisoni.net</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</main>
+
+<!-- footer section start -->
+<footer>
+  <section>
+   <div class="container py-4">
+    <div class="row justify-content-evenly">
+     <!-- accordion start  -->
+     <div class="col-md-6 col-lg-3 mb-3">
+      <!-- accordion 1 -->
+      <div class="accordion" id="accordion1">
+       <div class="accordion-item border-0 bg-transparent">
+        <h2 class="accordion-header">
+         <div class="row justify-content-between">
+          <div class="col-10 pe-0">
+           <button class="border-0 outline-0 bg-transparent accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            IMPORTANT LINKS
+          </button>
+        </div>
+        <div class="col-2 fs-5 pt-2 d-sm-none" style="color: #af71d5;">
+         <span data-bs-target="#collapseOne" data-bs-toggle="collapse"><i class="fa-solid fa-angle-down"></i></span>
+       </div>
+     </div>
+   </h2>
+   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion1">
+     <div class="accordion-body px-0">
+      <ul class="list-group fs-6 custom-ul">
+       <li class="list-group-item">Programs</li>
+       <li class="list-group-item">Campus Facilities</li>
+       <li class="list-group-item">Student Club</li>
+       <li class="list-group-item">Admission Procedure</li>
+       <li class="list-group-item">GHR Labs & Research Center</li>
+       <li class="list-group-item">Current Openings</li>
+     </ul>
+   </div>
+ </div>
+</div>
+</div>
+</div>
+<!-- accordion 2 -->
+<div class="col-md-6 col-lg-3 mb-3">
+  <div class="accordion" id="accordion2">
+   <div class="accordion-item border-0 bg-transparent">
+    <h2 class="accordion-header">
+     <div class="row justify-content-between">
+      <div class="col-10 pe-0">
+       <button class="border-0 outline-0 bg-transparent accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        PORTALS
+      </button>
+    </div>
+    <div class="col-2 fs-5 pt-2 d-sm-none" style="color: #af71d5;">
+     <span data-bs-toggle="collapse" data-bs-target="#collapseTwo"><i class="fa-solid fa-angle-down"></i></span>
+   </div>
+ </div>
+</h2>
+<div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordion2">
+ <div class="accordion-body px-0">
+  <ul class="list-group fs-6 custom-ul">
+   <li class="list-group-item">Alumni Portal</li>
+   <li class="list-group-item">RGI Placement</li>
+   <li class="list-group-item">NSP</li>
+   <li class="list-group-item">NAC</li>
+   <li class="list-group-item">SGRKF</li>
+   <li class="list-group-item">GHRSCF</li>
+ </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- accordion 3 -->
+<div class="col-md-6 col-lg-3 mb-3">
+  <div class="accordion" id="accordion3">
+   <div class="accordion-item border-0 bg-transparent">
+    <h2 class="accordion-header">
+     <div class="row justify-content-between">
+      <div class="col-10 pe-0">
+       <button class="border-0 outline-0 bg-transparent accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+        COLLEGE HIGHLIGHTS
+      </button>
+    </div>
+    <div class="col-2 fs-5 pt-2 d-sm-none" style="color: #af71d5;">
+     <span data-bs-toggle="collapse" data-bs-target="#collapseThree"><i class="fa-solid fa-angle-down"></i></span>
+   </div>
+ </div>
+</h2>
+<div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordion3">
+ <div class="accordion-body px-0">
+  <ul class="list-group fs-6 custom-ul">
+   <li class="list-group-item">Toastmasters</li>
+   <li class="list-group-item">Skill Development Program</li>
+   <li class="list-group-item">REAP</li>
+   <li class="list-group-item">G H Raisoni TBIF</li>
+ </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- accordion 4 -->
+<div class="col-md-6 col-lg-3 mb-3">
+  <div class="accordion" id="accordion4">
+   <div class="accordion-item border-0 bg-transparent">
+    <h2 class="accordion-header">
+     <div class="row justify-content-between">
+      <div class="col-10 pe-0">
+       <button class="border-0 outline-0 bg-transparent accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+        CONTACT
+      </button>
+    </div>
+    <div class="col-2 fs-5 pt-2 d-sm-none" style="color: #af71d5;">
+     <span data-bs-toggle="collapse" data-bs-target="#collapseFour"><i class="fa-solid fa-angle-down"></i></span>
+   </div>
+ </div>
+</h2>
+<div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordion4">
+ <div class="accordion-body px-0">
+  <ul class="list-group fs-6 custom-ul">
+   <li class="list-group-item"><i class="fa-solid fa-location-dot me-2"></i> 345, Shradha House, Kingsway,<br>Nagpur- 440001</li>
+   <li class="list-group-item"><i class="fa-solid fa-phone me-2"></i> 0712-6617181 , 0712-6617182</li>
+   <li class="list-group-item"><i class="fa-solid fa-envelope me-2"></i> info@raisoni.net</li>
+ </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- accordion end  -->
+</div>
+<!-- footer dome white  -->
+<div class="row justify-content-center mt-3 mb-5">
+ <div class="col-md-7 d-none d-sm-block">
+  <img src="/assets/images/footer-dome-white.png" class="img-fluid" style="max-width: 80%;">
+</div>
+<div class="col-md-4 text-white d-flex justify-content-center">
+  <div  class="text-center social-icons">
+   <i class="fa-brands fa-facebook-f"></i>
+ </div>
+ <div class="text-center social-icons">
+   <i class="fa-brands fa-x-twitter"></i>
+ </div>
+ <div class="text-center social-icons">
+   <i class="fa-brands fa-linkedin"></i>
+ </div>
+ <div class="text-center social-icons">
+   <i class="fa-brands fa-youtube"></i>
+ </div>
+</div>
+</div>
+<!-- copyright -->
+<div class="row text-white justify-content-between align-items-center" style="font-size: 12px;">
+ <div class="col-md-7 ">
+  <p>© 2024 All Rights Reserved. Design & Developed by <a class="custom-link" href="#">Global Education Limited.</a></p>
+</div>
+<div class="col-md-5 d-flex footer-nav">
+  <a class="custom-link" href="#">Privacy Policy</a>
+  <a class="custom-link" href="#">Terms & Conditions</a>
+  <a class="custom-link" href="#">Refund & Cancellation</a>
+</div>
+</div>
+</div>
+</section>
+</footer>
+<!-- footer section end -->
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"
+></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+ AOS.init();
+</script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
