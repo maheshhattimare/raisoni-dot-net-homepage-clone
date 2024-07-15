@@ -413,6 +413,73 @@ footer {
   border-color: #fff;
 }
 /* footer end */
+
+.step-number {
+  height: 80px;
+  width: 80px;
+  border: 2px solid #5c0f8b;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+.step-number p {
+  font-size: 14px;
+}
+.step-number span {
+  color: #5c0f8b;
+  display: inline-block;
+  margin-top: -5px;
+}
+.step-text {
+  font-size: 15px;
+}
+.p-team-card-hover {
+  transition: all 0.4s ease;
+}
+.p-team-card-hover:hover {
+  border: 1px solid #5c0f8b;
+  scale: 101%;
+}
+.breadcrumb-item-hover li > a:hover {
+  color: red !important;
+}
+/* campus life end  */
+
+/* student club start  */
+.student-club-card {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.student-club-card > div > div :last-child {
+  font-size: 15px;
+  color: #888787;
+  font-weight: 300;
+}
+.student-club-card {
+  transition: background-color 0.1s ease;
+}
+.student-club-card:hover {
+  background-color: #fbf2e3;
+}
+/* student club end  */
+/* safty and security start  */
+.safety-card div:hover {
+  background-color: rgba(251, 242, 227, 0.2);
+}
+.safety-card:hover {
+  margin-top: -10px;
+}
+.safety-card {
+  transition: all 0.3s ease;
+}
+.safety-card div {
+  min-height: 350px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+.safety-card div > img {
+  max-width: 60px;
+}
+/* safety and security end  */
+
 /* media queries  */
 @media screen and (max-width: 576px) {
   .raisoni-logo {
@@ -508,69 +575,3 @@ footer {
   }
   /* campus life end  */
 }
-
-.step-number {
-  height: 80px;
-  width: 80px;
-  border: 2px solid #5c0f8b;
-  border-radius: 50%;
-  flex: 0 0 auto;
-}
-.step-number p {
-  font-size: 14px;
-}
-.step-number span {
-  color: #5c0f8b;
-  display: inline-block;
-  margin-top: -5px;
-}
-.step-text {
-  font-size: 15px;
-}
-.p-team-card-hover {
-  transition: all 0.4s ease;
-}
-.p-team-card-hover:hover {
-  border: 1px solid #5c0f8b;
-  scale: 101%;
-}
-.breadcrumb-item-hover li > a:hover {
-  color: red !important;
-}
-/* campus life end  */
-
-/* student club start  */
-.student-club-card {
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
-}
-.student-club-card > div > div :last-child {
-  font-size: 15px;
-  color: #888787;
-  font-weight: 300;
-}
-.student-club-card {
-  transition: background-color 0.1s ease;
-}
-.student-club-card:hover {
-  background-color: #fbf2e3;
-}
-/* student club end  */
-/* safty and security start  */
-.safety-card div:hover {
-  background-color: rgba(251, 242, 227, 0.2);
-}
-.safety-card:hover {
-  margin-top: -10px;
-}
-.safety-card {
-  transition: all 0.3s ease;
-}
-.safety-card div {
-  min-height: 350px;
-  background-color: #fff;
-  transition: background-color 0.3s ease;
-}
-.safety-card div > img {
-  max-width: 60px;
-}
-/* safety and security end  */
