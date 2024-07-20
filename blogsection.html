@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    .custom-nav{
+  background: linear-gradient(
+    to bottom,
+    #000,
+    rgba(0, 0, 0, 0.639),
+    transparent) !important;
+}
+
+.navbar-nav li > a {
+  margin-right: 10px;
+}
+
+.lg-nav-item-list a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #333 !important;
+  border: 0;
+  transition: all 0.2s ease;
+}
+
+.lg-nav-item-list a:hover{
+  color: #5c0f8b !important;
+  background-color: rgb(247, 245, 245);
+}
+
+.lg-nav-item:hover .lg-nav-item-list{
+  display: block !important;
+}
+   footer {
+    background-color: #5c0f8b;
+  }
+  .accordion-btn {
+    font-size: 18px;
+    color: #af71d5;
+    letter-spacing: 2px;
+  }
+  .custom-ul li {
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 15px !important;
+  }
+  .custom-ul li:hover {
+    color: red;
+  }
+  .custom-link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  .custom-link:hover {
+    color: orangered;
+  }
+  .social-icons {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding-top: 5px;
+    border: 1px solid red;
+    transition: all 0.3s ease;
+    margin-right: 8px;
+  }
+  .social-icons:hover {
+    background-color: #000;
+    border-color: #fff;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <!-- header section start  -->
+    <section class="position-relative overflow-hidden">
+      <div>
+        <!-- background img -->
+        <img
+        src="assets/images/ghrce.png"
+        class="img-fluid position-relative"
+        style="
+        max-height: 30vh;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(70%);
+        "
+        />
+        <div class="img-white-bg position-absolute top-0 start-0 w-100 h-100" style="background-color: #3c3c3ca6;"></div>
+
+        <div
+        class="container-fluid text-center position-absolute top-50 start-0"
+        >
+        <div class="row text-center">
+          <div class="col-12 text-center">
+            <h4 class="h2 fw-medium text-white">Blogs-Section</h4>
+          </div>
+          <div class="col-12 text-center mt-2" >
+            <nav aria-label="breadcrumb" >
+              <ol class="breadcrumb-item-hover breadcrumb justify-content-center text-white fs-6 text-decoration-none" >
+                <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                <li><i class="fa-solid fa-angles-right mx-2"></i></li>
+                <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Media</a></li>
+                <li><i class="fa-solid fa-angles-right mx-2"></i></li>
+                <li class="breadcrumb-item active text-white" aria-current="page">Blogs-Section</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar  -->
+    <nav
+    class="navbar navbar-expand-lg navbar-dark bg-dark custom-nav fixed-top"
+    >
+    <div class="container mt-2">
+      <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a href="index.html"><img src="assets/images/logo.png" class="pe-sm-4 img-fluid raisoni-logo" style="max-width: 130px;"/></a>
+    <!-- drop btn start-->
+    <div class="dropdown">
+      <button
+      class="custom-btn dropdown-toggle border-0"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+      style="color: #5c0f8b; background-color: #fff"
+      >
+      Academics
+    </button>
+    <div class="dropdown-menu bg-warning mt-1 p-2">Comming soon...</div>
+  </div>
+  <!-- drop btn end -->
+  <div
+  class="collapse navbar-collapse justify-content-end"
+  id="navbarNav"
+  >
+  <!-- large screen nav bar  -->
+  <ul
+  class="navbar-nav fw-normal d-none d-lg-flex justify-content-end"
+  >
+  <li class="nav-item position-relative lg-nav-item">
+    <a href="#" class="nav-link active">About</a>
+    <div
+    class="list-group position-absolute start-0 lg-nav-item-list shadow text-nowrap"
+    style="display: none; min-width: 200px"
+    >
+    <a href="overview.html" class="list-group-item list-group-item-action"
+    >Overview</a
+    >
+    <a href="visionmission.html" class="list-group-item list-group-item-action"
+    >Vision - Mission</a
+    >
+    <a href="leadership.html" class="list-group-item list-group-item-action"
+    >Leadership</a
+    >
+    <a href="administration.html" class="list-group-item list-group-item-action"
+    >Administration</a
+    >
+    <a href="institutionlist.html" class="list-group-item list-group-item-action"
+    >Institution list</a
+    >
+    <a href="labs.html" class="list-group-item list-group-item-action"
+    >Labs</a
+    >
+    <a href="library.html" class="list-group-item list-group-item-action"
+    >Library</a
+    >
+  </div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+  <a href="#" class="nav-link active">Admission</a>
+  <div
+  class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+  style="display: none; min-width: 200px"
+  >
+  <a href="studenteducationloan.html" class="list-group-item list-group-item-action"
+  >Student Education loan</a
+  >
+  <a href="admissionprocess.html" class="list-group-item list-group-item-action"
+  >Admission process</a
+  >
+  <a href="eligibility.html" class="list-group-item list-group-item-action"
+  >Eligibility</a
+  >
+  <a href="admissionhelpline.html" class="list-group-item list-group-item-action"
+  >Admission Helpline</a
+  >
+  <a href="feesstrycture.html" class="list-group-item list-group-item-action"
+  >Fees structure</a
+  >
+</div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+  <a href="#" class="nav-link active">Research</a>
+  <div
+  class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+  style="display: none; min-width: 200px"
+  >
+  <a href="researchexcellence.html" class="list-group-item list-group-item-action"
+  >Research Excellence</a
+  >
+  <a href="ghrlabs&researchcenter.html" class="list-group-item list-group-item-action"
+  >GHR Labs & Research Center</a
+  >
+  <a href="patent&publication.html" class="list-group-item list-group-item-action"
+  >Patent & Publication</a
+  >
+  <a href="partnership.html" class="list-group-item list-group-item-action"
+  >Partnerships</a
+  >
+  <a href="researchgrant.html" class="list-group-item list-group-item-action"
+  >Research Grant</a
+  >
+</div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+  <a href="#" class="nav-link active">Media</a>
+  <div
+  class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+  style="display: none; min-width: 200px"
+  >
+  <a href="blogsection.html" class="list-group-item list-group-item-action"
+  >Blogs-Section</a
+  >
+  <a href="media.html" class="list-group-item list-group-item-action"
+  >Media Coverage</a
+  >
+  <a href="campusbuzz.html" class="list-group-item list-group-item-action"
+  >Campus Buzz</a
+  >
+  <a href="photogallery.html" class="list-group-item list-group-item-action"
+  >Photo Gallery</a
+  >
+</div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+  <a href="#" class="nav-link active">Campus Life</a>
+  <div
+  class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+  style="display: none; min-width: 200px"
+  >
+  <a
+  href="placement.html"
+  class="list-group-item list-group-item-action"
+  >Placement</a
+  >
+  <a href="campusfacilities.html" class="list-group-item list-group-item-action"
+  >Campus facilities</a
+  >
+  <a href="studentclubs.html" class="list-group-item list-group-item-action"
+  >Student Clubs</a
+  >
+  <a href="hostel.html" class="list-group-item list-group-item-action"
+  >Hostels</a
+  >
+  <a href="sports.html" class="list-group-item list-group-item-action"
+  >Sports</a
+  >
+  <a href="safetysecurities.html" class="list-group-item list-group-item-action"
+  >Safety & Securities</a
+  >
+  <a href="transportation.html" class="list-group-item list-group-item-action"
+  >Transportation</a
+  >
+  <a href="classroom.html" class="list-group-item list-group-item-action"
+  >Classroom</a
+  >
+  <a href="elearning" class="list-group-item list-group-item-action"
+  >E-learning</a
+  >
+  <a href="healthservices" class="list-group-item list-group-item-action"
+  >Health-Services</a
+  >
+</div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+  <a href="#" class="nav-link active">Events</a>
+  <div
+  class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+  style="display: none; min-width: 200px"
+  >
+  <a href="dhammaldandiya.html" class="list-group-item list-group-item-action"
+  >Dhammal Dandiya</a
+  >
+  <a href="kasti.html" class="list-group-item list-group-item-action"
+  >Kashti</a
+  >
+  <a href="antaragni.html" class="list-group-item list-group-item-action"
+  >Antaragni</a
+  >
+  <a href="rpl.html" class="list-group-item list-group-item-action"
+  >RPL</a
+  >
+  <a href="shivmohotsav.html" class="list-group-item list-group-item-action"
+  >Shiv Mahotsav</a
+  >
+  <a href="ganeshutsav.html" class="list-group-item list-group-item-action"
+  >Ganesh Utsav</a
+  >
+  <a href="graduationceremony.html" class="list-group-item list-group-item-action"
+  >Graduation Ceremony</a
+  >
+  <a href="startuproadshow.html" class="list-group-item list-group-item-action"
+  >Startup Road Show</a
+  >
+</div>
+</li>
+<li class="nav-item position-relative">
+  <a href="#" class="nav-link active">Contact</a>
+</li>
+</ul>
+<!-- small screen nav bar  -->
+<ul class="navbar-nav fw-normal d-block d-lg-none">
+  <li class="nav-item">
+    <a
+    class="nav-link active accordion-button collapsed my-1"
+    aria-current="page"
+    href="#"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#nav-item-1"
+    aria-expanded="false"
+    aria-controls="nav-item-1"
+    >
+    About
+  </a>
+  <ul
+  class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+  id="nav-item-1"
+  >
+  <li class="list-group-item"><a href="om/overview.html">Overview</a></li>
+  <li class="list-group-item">
+    <a href="visionmission.html">Vision-Mission</a>
+  </li>
+  <li class="list-group-item"><a href="leadership.html">Leadership</a></li>
+  <li class="list-group-item">
+    <a href="administration.html">Administration</a>
+  </li>
+  <li class="list-group-item">
+    <a href="institutionlist.html">Institution List</a>
+  </li>
+  <li class="list-group-item"><a href="labs.html">Labs</a></li>
+  <li class="list-group-item"><a href="library.html">Library</a></li>
+</ul>
+</li>
+<li class="nav-item">
+  <a
+  class="nav-link active accordion-button collapsed my-1"
+  aria-current="page"
+  href="#"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#nav-item-2"
+  aria-expanded="false"
+  aria-controls="nav-item-2"
+  >
+  Addmission
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-2"
+>
+<li class="list-group-item">
+  <a href="studenteducationloan.html">Student Education loan</a>
+</li>
+<li class="list-group-item">
+  <a href="admissionprocess.html">Admission Procedure</a>
+</li>
+<li class="list-group-item"><a href="eligibility.html">Eligibility</a></li>
+<li class="list-group-item">
+  <a href="admissionhelpline">Admission Helpline</a>
+</li>
+<li class="list-group-item">
+  <a href="feesstrycture.html">Fees Structure</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+  <a
+  class="nav-link active accordion-button collapsed my-1"
+  aria-current="page"
+  href="#"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#nav-item-3"
+  aria-expanded="false"
+  aria-controls="nav-item-3"
+  >
+  Research
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-3"
+>
+<li class="list-group-item">
+  <a href="researchexcellence.html">Research Excellence</a>
+</li>
+<li class="list-group-item">
+  <a href="ghrlabs&researchcenter.html">GHR Labs & Research Center</a>
+</li>
+<li class="list-group-item">
+  <a href="patent&publication.html">Patent & Publication</a>
+</li>
+<li class="list-group-item"><a href="partnerships.html">Partnerships</a></li>
+<li class="list-group-item">
+  <a href="researchgrant.html">Research Grant</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+  <a
+  class="nav-link active accordion-button collapsed my-1"
+  aria-current="page"
+  href="#"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#nav-item-4"
+  aria-expanded="false"
+  aria-controls="nav-item-4"
+  >
+  Media
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-4"
+>
+<li class="list-group-item"><a href="blogsection.html">Blog-Section</a></li>
+<li class="list-group-item">
+  <a href="media.html">Media Coverage</a>
+</li>
+<li class="list-group-item"><a href="campusbuzz.html">campus Buzz</a></li>
+<li class="list-group-item"><a href="partnerships.html">Partnerships</a></li>
+<li class="list-group-item"><a href="photogallery.html">Photo Gallery</a></li>
+</ul>
+</li>
+<li class="nav-item">
+  <a
+  class="nav-link active accordion-button collapsed my-1"
+  aria-current="page"
+  href="#"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#nav-item-5"
+  aria-expanded="false"
+  aria-controls="nav-item-5"
+  >
+  Campus Life
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-5"
+>
+<li class="list-group-item"><a href="placements.html">Placement</a></li>
+<li class="list-group-item">
+  <a href="campusfacilities.html">Campus facilities</a>
+</li>
+<li class="list-group-item"><a href="#">Student Clubs</a></li>
+<li class="list-group-item"><a href="#">Hostels</a></li>
+<li class="list-group-item"><a href="#">Sports</a></li>
+<li class="list-group-item">
+  <a href="safety&Securities.html">safety & Securities</a>
+</li>
+<li class="list-group-item">
+  <a href="transportation.html">Transportation</a>
+</li>
+<li class="list-group-item"><a href="classroom.html">Classroom</a></li>
+<li class="list-group-item"><a href="elearning.html">E-learning</a></li>
+<li class="list-group-item">
+  <a href="healthservices.html">Health Services</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+  <a
+  class="nav-link active accordion-button collapsed my-1"
+  aria-current="page"
+  href="#"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#nav-item-6"
+  aria-expanded="false"
+  aria-controls="nav-item-6"
+  >
+  Events
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-6"
+>
+<li class="list-group-item">
+  <a href="dhammaldandiya.html">Dhamaal Dandiya</a>
+</li>
+<li class="list-group-item"><a href="kasti.html">Kashti</a></li>
+<li class="list-group-item"><a href="antaragni.html">Antaragni</a></li>
+<li class="list-group-item"><a href="rpl.html">RPL</a></li>
+<li class="list-group-item"><a href="shivmohotsav.html">Shiv Mahotsav</a></li>
+<li class="list-group-item"><a href="ganeshutsav.html">Ganesh Utsav</a></li>
+<li class="list-group-item">
+  <a href="graduationceremony.html">Graduation Ceremony</a>
+</li>
+<li class="list-group-item">
+  <a href="startuproadshow.html">Startup Road Show</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+  <a
+  class="nav-link active accordion-button collapsed my-1"
+  href="#"
+  >Contact
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</section>
+</header>
+<br>
+<main>
+  <section class="section-lg">
+    <div class="card p-5">
+      <div class="row">
+        <div class="col-md-8">
+          <img src="assets/images/jee-mains-and-advanced-2022-registration-eligibilty.png" class="card-img-top" alt="Loading">
+          <div class="card-body">
+            <h4 class="card-title" style="color: #800080">JEE Exam 2022, Registration, Important Dates, Eligibility, Syllabus, Exam Pattern</h4>
+            <p class="card-text">The Joint Entrance Exam conducted by NTA (National Testing Agency) will occur twice this year, in April 2022 and May 2022. The students are eagerly filling out forms for this competitive exam. This year, two sessions will take place one in April and the second in May 2022. JEE exam dates for the year 2022 are given in the table below..</p>
+            <a href="file:///C:/wamp64/www/Sarthak/jee-exam-2022,-registration,-important-dates,-eligibility,-syllabus,-exam-pattern.html" button type="button" class="btn btn-dark" style="background-color: #800080">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-4 overflow-y-scroll" style="height: 400px">
+          <div id="list-example" class="list-group">
+            <div class="card">
+              <a class="list-group-item list-group-item-action" href="file:///C:/wamp64/www/Sarthak/jee-exam-2022,-registration,-important-dates,-eligibility,-syllabus,-exam-pattern.html.html"><img src="assets/images/jee-mains-and-advanced-2022-registration-eligibilty.png" height="63" width="95"> JEE Exam 2022, Registration, Important Dates, Eligibility, Syllabus, Exam Pattern</a>
+            </div>
+            <div class="card">
+             <a class="list-group-item list-group-item-action" href="file:///C:/wamp64/www/Sarthak/how-to-prepare-for-jee-mains-and-advanced-exams.html"><img src="assets/images/how-to-prepare-for-mht-cet-entrance-exam-2022.png" height="63" width="95">How to prepare for JEE Mains and Advanced Exams</a>
+           </div>
+           <div class="card">
+             <a class="list-group-item list-group-item-action" href="file:///C:/wamp64/www/Sarthak/eligibility-criteria-for-mht-cet-examination-2022.html"><img src="assets/images/eligibility-criteria-for-mht-cet-examination-2022.png" height="63" width="95">Eligibility Criteria for MHT CET Examination 2022</a>
+           </div>
+           <div class="card">
+             <a class="list-group-item list-group-item-action" href="file:///C:/wamp64/www/Sarthak/mht-cet-2022-exam-preparation-guide.html"><img src="assets/images/mht-cet-2022-exam-preparation-guide.png" height="63" width="95">MHT CET 2022 Exam Preparation Guide</a>
+           </div>
+           <div class="card">
+             <a class="list-group-item list-group-item-action" href="file:///C:/wamp64/www/Sarthak/how-to-prepare-for-mht-cet-entrance-exam-2022.html"><img src="assets/images/how-to-prepare-for-mht-cet-entrance-exam-2022.png" height="63" width="95">How to Prepare for MHT CET Entrance Exam 2022?</a>
+           </div>
+           <div class="card">
+             <a class="list-group-item list-group-item-action" href="file:///C:/wamp64/www/Sarthak/reel-making-competitions.html"><img src="assets/images/reel-making-competitions.png" height="63" width="95">Reel Making Competitions</a>
+           </div>
+           <div class="card">
+             <a class="list-group-item list-group-item-action" href="file:///C:/wamp64/www/Sarthak/photography-competition.html"><img src="assets/images/photography-competition.png" height="63" width="95">Photography Competition</a>
+           </div>
+           <div class="card">
+             <a class="list-group-item list-group-item-action" href="file:///C:/wamp64/www/Sarthak/guidelines-for-mht-cet-entrance-exam-2023.html"><img src="assets/images/mht-cet-entrance-exam-2022-guidelines.png" height="63" width="95">Guidelines for MHT CET Entrance Exam 2023</a>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+ </section>
+ <br>
+ <section>
+  <div class="container">
+    <div class="card" style="width: 50rem">
+      <div class="row">
+          <img src="assets/images/how-to-prepare-for-jee-advanced.png" class="card-img-top" alt="Loading">
+          <div class="card-body">
+            <h4 class="card-title" style="color: #800080">How to prepare for JEE Mains and Advanced Exams</h4>
+            <p class="card-text">It indeed is a busy time for JEE aspirants, and we've come across students who are continuously facing difficulty starting somewhere for JEE studies. This blog covers preparation, tips on studying, where to find your information for the upcoming JEE Exam etc. Engineering aspirants majorly appear for this exam, and here's a guide on how you can start prepping for this exam.</p>
+            <a href="file:///C:/wamp64/www/Sarthak/how-to-prepare-for-jee-mains-and-advanced-exams.html" button type="button" class="btn btn-dark" style="background-color: #800080">Read More</a>
+          </div>
+      </div>
+    </div>
+  </div>
+<br>
+  <div class="container">
+    <div class="card" style="width: 50rem;">
+      <img src="assets/images/eligibility-criteria-for-mht-cet-examination-2022.png" class="card-img-top" alt="Loading">
+      <div class="card-body">
+        <h4 class="card-title" style="color: #800080">Eligibility Criteria for MHT CET Examination 2022</h4>
+        <p class="card-text">The eligibilty criteria for MHT CET 2022 registration by the State Common Entrance Cell, Maharashtra has released their eligibility criteria for the year 2022 in addition with the official guidelines on the administrative official website.</p>
+
+        <p>All the aspiring candidates are required to check if they meet the requirements in the eligibility criteria section before they begin to register for the examination. </p>
+        <a href="file:///C:/wamp64/www/Sarthak/eligibility-criteria-for-mht-cet-examination-2022.html" button type="button" class="btn btn-dark" style="background-color: #800080">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<section>
+  <div class="container">
+    <div class="card" style="width: 50rem;">
+      <img src="assets/images/mht-cet-2022-exam-preparation-guide.png" class="card-img-top" alt="Loading">
+      <div class="card-body">
+        <h4 class="card-title" style="color: #800080">MHT CET 2022 Exam Preparation Guide</h4>
+        <p class="card-text">About more than 4 lakh students/aspirants prepare for the MHT CET exam every year. The Maharashtra Common Entrance Test Exam is conducted every year by the Government of Maharashtra, which promotes and encourages more and more students to opt for Departments, Universities, and Institutions in Maharashtra state.</p>
+        <a href="file:///C:/wamp64/www/Sarthak/index5.html" button type="button" class="btn btn-dark" style="background-color: #800080">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<section>
+  <div class="container">
+    <div class="card" style="width: 50rem;">
+      <img src="assets/images/how-to-prepare-for-mht-cet-entrance-exam-2022.png" class="card-img-top" alt="Loading">
+      <div class="card-body">
+        <h4 class="card-title" style="color: #800080">How to Prepare for MHT CET Entrance Exam 2022?</h4>
+        <p class="card-text">MHT CET entrance test isn't the easiest but very different from your normal council examinations. This examination tests your fundamental conceptions and your methods of application. You can easily score good marks if you have a systematic approach to it. Problem working strategies and short-cuts methods come in handy when you appear for an examination. Proper time distribution and management between questions play a crucial role in completing the examination. The average time that one question requires would be around 2-3 minutes.</p>
+        <a href="file:///C:/wamp64/www/Sarthak/how-to-prepare-for-mht-cet-entrance-exam-2022.html" button type="button" class="btn btn-dark" style="background-color: #800080">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<section>
+  <div class="container">
+    <div class="card" style="width: 50rem;">
+      <img src="assets/images/reel-making-competitions.png" class="card-img-top" alt="Loading">
+      <div class="card-body">
+        <h4 class="card-title" style="color: #800080">Reel Making Competitions</h4>
+        <p class="card-text">To explore the creative side of our students, Raisoni Group brings you the most exciting Competition of this year, "The Reel Making Competition", with the theme "How I See My Campus". In this digital era, Reels have undoubtedly become a medium for the younger generation to exhibit their creativity and bring in the finest trends on social media.</p>
+        <a href="file:///C:/wamp64/www/Sarthak/reel-making-competitions.html" button type="button" class="btn btn-dark" style="background-color: #800080">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<section>
+  <div class="container">
+    <div class="card" style="width: 50rem;">
+      <img src="assets/images/photography-competition.png" class="card-img-top" alt="Loading">
+      <div class="card-body">
+        <h4 class="card-title" style="color: #800080">Reel Making Competitions</h4>
+        <p class="card-text">To explore the creative side of our students, Raisoni Group brings you the most exciting Competition of this year, "The Reel Making Competition", with the theme "How I See My Campus". In this digital era, Reels have undoubtedly become a medium for the younger generation to exhibit their creativity and bring in the finest trends on social media.</p>
+        <a href="file:///C:/wamp64/www/Sarthak/photography-competition.html" button type="button" class="btn btn-dark" style="background-color: #800080">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<section>
+  <div class="container">
+    <div class="card" style="width: 50rem;">
+      <img src="assets/images/mht-cet-entrance-exam-2022-guidelines.png" class="card-img-top" alt="Loading">
+      <div class="card-body">
+        <h4 class="card-title" style="color: #800080">Reel Making Competitions</h4>
+        <p class="card-text">To explore the creative side of our students, Raisoni Group brings you the most exciting Competition of this year, "The Reel Making Competition", with the theme "How I See My Campus". In this digital era, Reels have undoubtedly become a medium for the younger generation to exhibit their creativity and bring in the finest trends on social media.</p>
+        <a href="file:///C:/wamp64/www/Sarthak/guidelines-for-mht-cet-entrance-exam-2023.html" button type="button" class="btn btn-dark" style="background-color: #800080">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<br>
+<footer>
+ <section>
+  <div class="container py-4">
+   <div class="row justify-content-evenly">
+    <!-- accordion start  -->
+    <div class="col-md-6 col-lg-3 mb-3">
+     <!-- accordion 1 -->
+     <div class="accordion" id="accordion1">
+      <div class="accordion-item border-0 bg-transparent">
+       <h2 class="accordion-header">
+        <div class="row justify-content-between">
+         <div class="col-10 pe-0">
+          <button class="border-0 outline-0 bg-transparent accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            IMPORTANT LINKS
+          </button>
+        </div>
+        <div class="col-2 fs-5 pt-2 d-sm-none" style="color: #af71d5;">
+          <span data-bs-target="#collapseOne" data-bs-toggle="collapse"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+      </div>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion1">
+      <div class="accordion-body px-0">
+       <ul class="list-group fs-6 custom-ul">
+        <li class="list-group-item">Programs</li>
+        <li class="list-group-item">Campus Facilities</li>
+        <li class="list-group-item">Student Club</li>
+        <li class="list-group-item">Admission Procedure</li>
+        <li class="list-group-item">GHR Labs & Research Center</li>
+        <li class="list-group-item">Current Openings</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- accordion 2 -->
+<div class="col-md-6 col-lg-3 mb-3">
+ <div class="accordion" id="accordion2">
+  <div class="accordion-item border-0 bg-transparent">
+   <h2 class="accordion-header">
+    <div class="row justify-content-between">
+     <div class="col-10 pe-0">
+      <button class="border-0 outline-0 bg-transparent accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        PORTALS
+      </button>
+    </div>
+    <div class="col-2 fs-5 pt-2 d-sm-none" style="color: #af71d5;">
+      <span data-bs-toggle="collapse" data-bs-target="#collapseTwo"><i class="fa-solid fa-angle-down"></i></span>
+    </div>
+  </div>
+</h2>
+<div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordion2">
+  <div class="accordion-body px-0">
+   <ul class="list-group fs-6 custom-ul">
+    <li class="list-group-item">Alumni Portal</li>
+    <li class="list-group-item">RGI Placement</li>
+    <li class="list-group-item">NSP</li>
+    <li class="list-group-item">NAC</li>
+    <li class="list-group-item">SGRKF</li>
+    <li class="list-group-item">GHRSCF</li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- accordion 3 -->
+<div class="col-md-6 col-lg-3 mb-3">
+ <div class="accordion" id="accordion3">
+  <div class="accordion-item border-0 bg-transparent">
+   <h2 class="accordion-header">
+    <div class="row justify-content-between">
+     <div class="col-10 pe-0">
+      <button class="border-0 outline-0 bg-transparent accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+        COLLEGE HIGHLIGHTS
+      </button>
+    </div>
+    <div class="col-2 fs-5 pt-2 d-sm-none" style="color: #af71d5;">
+      <span data-bs-toggle="collapse" data-bs-target="#collapseThree"><i class="fa-solid fa-angle-down"></i></span>
+    </div>
+  </div>
+</h2>
+<div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordion3">
+  <div class="accordion-body px-0">
+   <ul class="list-group fs-6 custom-ul">
+    <li class="list-group-item">Toastmasters</li>
+    <li class="list-group-item">Skill Development Program</li>
+    <li class="list-group-item">REAP</li>
+    <li class="list-group-item">G H Raisoni TBIF</li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- accordion 4 -->
+<div class="col-md-6 col-lg-3 mb-3">
+ <div class="accordion" id="accordion4">
+  <div class="accordion-item border-0 bg-transparent">
+   <h2 class="accordion-header">
+    <div class="row justify-content-between">
+     <div class="col-10 pe-0">
+      <button class="border-0 outline-0 bg-transparent accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+        CONTACT
+      </button>
+    </div>
+    <div class="col-2 fs-5 pt-2 d-sm-none" style="color: #af71d5;">
+      <span data-bs-toggle="collapse" data-bs-target="#collapseFour"><i class="fa-solid fa-angle-down"></i></span>
+    </div>
+  </div>
+</h2>
+<div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordion4">
+  <div class="accordion-body px-0">
+   <ul class="list-group fs-6 custom-ul">
+    <li class="list-group-item"><i class="fa-solid fa-location-dot me-2"></i> 345, Shradha House, Kingsway,<br>Nagpur- 440001</li>
+    <li class="list-group-item"><i class="fa-solid fa-phone me-2"></i> 0712-6617181 , 0712-6617182</li>
+    <li class="list-group-item"><i class="fa-solid fa-envelope me-2"></i> info@raisoni.net</li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- accordion end  -->
+</div>
+<!-- footer dome white  -->
+<div class="row justify-content-center mt-3 mb-5">
+  <div class="col-md-7 d-none d-sm-block">
+   <img src="assets/images/footer-dome-white.png" class="img-fluid" style="max-width: 80%;">
+ </div>
+ <div class="col-md-4 text-white d-flex justify-content-center">
+   <div  class="text-center social-icons">
+    <i class="fa-brands fa-facebook-f"></i>
+  </div>
+  <div class="text-center social-icons">
+    <i class="fa-brands fa-x-twitter"></i>
+  </div>
+  <div class="text-center social-icons">
+    <i class="fa-brands fa-linkedin"></i>
+  </div>
+  <div class="text-center social-icons">
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+</div>
+</div>
+<!-- copyright -->
+<div class="row text-white justify-content-between align-items-center" style="font-size: 12px;">
+  <div class="col-md-7 ">
+   <p>© 2024 All Rights Reserved. Design & Developed by <a class="custom-link" href="#">Global Education Limited.</a></p>
+ </div>
+ <div class="col-md-5 d-flex footer-nav">
+   <a class="custom-link" href="#">Privacy Policy</a>
+   <a class="custom-link" href="#">Terms & Conditions</a>
+   <a class="custom-link" href="#">Refund & Cancellation</a>
+ </div>
+</div>
+</div>
+</section>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

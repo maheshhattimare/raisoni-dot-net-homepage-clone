@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/vinitstyle2.css">
+
+<style>
+    /* Add your custom styles here */
+    @media (max-width: 767.98px) {
+        .card-row {
+            flex-direction: column;
+        }
+    }
+</style>
+
+</head>
+<body>
+<header>
+    <!-- header section start  -->
+    <section class="position-relative overflow-hidden">
+      <div>
+        <!-- background img -->
+        <img src="assets/img/raisoni.png" class="img-fluid position-relative" style="max-height: 40vh; width: 100%;object-fit: cover; filter: brightness(70%); border-radius: 0px 0px 0px 0px;"/>
+        <div class="img-white-bg position-absolute top-0 start-0 w-100 h-100" style="background-color: #3c3c3ca6;"></div>
+        <div
+        class="container-fluid text-center position-absolute top-50 start-0">
+        <div class="row text-center">
+          <div class="col-12 text-center">
+            <h4 class="h2 fw-medium text-white">National</h4>
+          </div>
+          <div class="col-12 text-center mt-2" >
+              <ol class="breadcrumb-item-hover breadcrumb justify-content-center text-white fs-6 text-decoration-none" >
+                <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                <li><i class="fa fa-angle-double-right"></i></li>
+                <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Media</a></li>
+                <li><i class="fa fa-angle-double-right"></i></li>
+                <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Photo Gallery</a></li>
+                <li><i class="fa fa-angle-double-right"></i></li>
+                <li class="breadcrumb-item active text-white" aria-current="page">National</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-nav fixed-top">
+      <div class="container mt-2">
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a href="index.html"><img src="assets/img/logo.png" class="pe-sm-4 img1-fluid raisoni-logo" style="max-width: 130px;"/></a>
+      <!-- drop btn start-->
+        <div class="dropdown">
+          <button
+            class="custom-btn dropdown-toggle border-0"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="color: #5c0f8b; background-color: #fff">
+            Academics
+          </button>
+          <div class="dropdown-menu bg-warning mt-1 p-2">Comming soon...</div>
+        </div>
+    <!-- drop btn end -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <!-- large screen nav bar  -->
+    <ul class="navbar-nav fw-normal d-none d-lg-flex justify-content-end">
+      <li class="nav-item position-relative lg-nav-item">
+          <a href="#" class="nav-link active">About</a>
+          <div
+          class="list-group position-absolute start-0 lg-nav-item-list shadow text-nowrap"
+          style="display: none; min-width: 200px"
+          >
+          <a href="overview.html" class="list-group-item list-group-item-action"
+          >Overview</a
+          >
+          <a href="visionmission.html" class="list-group-item list-group-item-action"
+          >Vision - Mission</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+          >Leadership</a
+          >
+          <a href="indexadminstration.html" class="list-group-item list-group-item-action"
+          >Administration</a
+          >
+          <a href="institution.html" class="list-group-item list-group-item-action"
+          >Institution list</a
+          >
+          <a href="labs.html" class="list-group-item list-group-item-action"
+          >Labs</a
+          >
+          <a href="library.html" class="list-group-item list-group-item-action"
+          >Library</a
+          >
+      </div>
+    </li>
+  <li class="nav-item position-relative lg-nav-item">
+      <a href="#" class="nav-link active">Admission</a>
+        <div
+        class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+        style="display: none; min-width: 200px;">
+        <a href="studenteducationloan.html" class="list-group-item list-group-item-action"
+        >Student Education loan</a>
+        <a href="addmissionprocedure.html" class="list-group-item list-group-item-action"
+        >Admission process</
+        <a href="eligibility.html" class="list-group-item list-group-item-action"
+        >Eligibility</a>
+        <a href="addmissionhelpline.html" class="list-group-item list-group-item-action"
+        >Admission Helpline</a>
+        <a href="feesstructure.html" class="list-group-item list-group-item-action"
+        >Fees structure</a>
+      </div>
+  </li>
+  <li class="nav-item position-relative lg-nav-item">
+    <a href="#" class="nav-link active">Research</a>
+      <div
+      class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+      style="display: none; min-width: 200px"
+      >
+      <a href="/researchexcellence.html" class="list-group-item list-group-item-action"
+      >Research Excellence</a
+      >
+      <a href="ghrlabs&research.html" class="list-group-item list-group-item-action"
+      >GHR Labs & Research<br />Center</a
+      >
+      <a href="patent&publication.html" class="list-group-item list-group-item-action"
+      >Patent & Publication</a
+      >
+      <a href="partnerships.html" class="list-group-item list-group-item-action"
+      >Partnerships</a
+      >
+      <a href="researchgrant.html" class="list-group-item list-group-item-action"
+      >Research Grant</a
+      >
+    </div>
+  </li>
+  <li class="nav-item position-relative lg-nav-item">
+    <a href="#" class="nav-link active">Media</a>
+      <div
+      class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+      style="display: none; min-width: 200px"
+      >
+      <a href="blogsection.html" class="list-group-item list-group-item-action"
+      >Blogs-Section</a
+      >
+      <a href="media.html" class="list-group-item list-group-item-action"
+      >Media Coverage</a
+      >
+      <a href="campusbuzz.html" class="list-group-item list-group-item-action"
+      >Campus Buzz</a
+      >
+      <a href="photogallery.html" class="list-group-item list-group-item-action"
+      >Photo Gallery</a
+      >
+    </div>
+  </li>
+  <li class="nav-item position-relative lg-nav-item">
+    <a href="#" class="nav-link active">Campus Life</a>
+      <div
+      class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+      style="display: none; min-width: 200px"
+      >
+      <a
+      href="placement.html"
+      class="list-group-item list-group-item-action"
+      >Placement</a
+      >
+      <a href="campusfacilities.html" class="list-group-item list-group-item-action"
+      >Campus facilities</a
+      >
+      <a href="studentclubs.html" class="list-group-item list-group-item-action"
+      >Student Clubs</a
+      >
+      <a href="hostel.html" class="list-group-item list-group-item-action"
+      >Hostels</a
+      >
+      <a href="sports.html" class="list-group-item list-group-item-action"
+      >Sports</a
+      >
+      <a href="safetysecurities.html" class="list-group-item list-group-item-action"
+      >Safety & Securities</a
+      >
+      <a href="transportation.html" class="list-group-item list-group-item-action"
+      >Transportation</a
+      >
+      <a href="classroom.html" class="list-group-item list-group-item-action"
+      >Classroom</a
+      >
+      <a href="elearning.html" class="list-group-item list-group-item-action"
+      >E-learning</a
+      >
+      <a href="healtservices.html" class="list-group-item list-group-item-action"
+      >Health-Services</a
+      >
+    </div>
+  </li>
+  <li class="nav-item position-relative lg-nav-item">
+    <a href="#" class="nav-link active">Events</a>
+      <div
+      class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+      style="display: none; min-width: 200px"
+      >
+      <a href="dhamaaldandiya.html" class="list-group-item list-group-item-action"
+      >Dhammal Dandiya</a
+      >
+      <a href="kashti.html" class="list-group-item list-group-item-action"
+      >Kashti</a
+      >
+      <a href="antaragni.html" class="list-group-item list-group-item-action"
+      >Antaragni</a
+      >
+      <a href="rpl.html" class="list-group-item list-group-item-action"
+      >RPL</a
+      >
+      <a href="shivmahotsav.html" class="list-group-item list-group-item-action"
+      >Shiv Mahotsav</a
+      >
+      <a href="ganeshutsav.html" class="list-group-item list-group-item-action"
+      >Ganesh Utsav</a
+      >
+      <a href="graduationceremony.html" class="list-group-item list-group-item-action"
+      >Graduation Ceremony</a
+      >
+      <a href="startuproadshow.html" class="list-group-item list-group-item-action"
+      >Startup Road Show</a
+      >
+    </div>
+  </li>
+  <li class="nav-item position-relative">
+    <a href="#" class="nav-link active">Contact</a>
+  </li>
+  </ul>
+  <!-- small screen nav bar  -->
+  <ul class="navbar-nav fw-normal d-block d-lg-none">
+    <li class="nav-item">
+      <a
+      class="nav-link active accordion-button collapsed my-1"
+      aria-current="page"
+      href="#"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#nav-item-1"
+      aria-expanded="false"
+      aria-controls="nav-item-1"
+      >
+      About
+    </a>
+    <ul
+    class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+    id="nav-item-1"
+    >
+    <li class="list-group-item"><a href="overview.html">Overview</a></li>
+    <li class="list-group-item">
+      <a href="visionmission.html">Vision-Mission</a>
+    </li>
+    <li class="list-group-item"><a href="leadership.html">Leadership</a></li>
+    <li class="list-group-item">
+      <a href="indexadminstration.html">Administration</a>
+    </li>
+    <li class="list-group-item">
+      <a href="institution.html">Institution List</a>
+    </li>
+    <li class="list-group-item"><a href="lab.html">Labs</a></li>
+    <li class="list-group-item"><a href="library.html">Library</a></li>
+  </ul>
+  </li>
+  <li class="nav-item">
+    <a
+    class="nav-link active accordion-button collapsed my-1"
+    aria-current="page"
+    href="#"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#nav-item-2"
+    aria-expanded="false"
+    aria-controls="nav-item-2"
+    >
+    Addmission
+  </a>
+  <ul
+  class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+  id="nav-item-2"
+  >
+  <li class="list-group-item">
+    <a href="studenteducationloan.html">Student Education loan</a>
+  </li>
+  <li class="list-group-item">
+    <a href="addmissionprocedure.html">Admission Procedure</a>
+  </li>
+  <li class="list-group-item"><a href="#">Eligibility</a></li>
+  <li class="list-group-item">
+    <a href="addmissionhelpline.html">Admission Helpline</a>
+  </li>
+  <li class="list-group-item">
+    <a href="feesstructure.html">Fees Structure</a>
+  </li>
+  </ul>
+  </li>
+  <li class="nav-item">
+    <a
+    class="nav-link active accordion-button collapsed my-1"
+    aria-current="page"
+    href="#"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#nav-item-3"
+    aria-expanded="false"
+    aria-controls="nav-item-3"
+    >
+    Research
+  </a>
+  <ul
+  class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+  id="nav-item-3"
+  >
+  <li class="list-group-item">
+    <a href="researchexcellence.html">Research Excellence</a>
+  </li>
+  <li class="list-group-item">
+    <a href="ghrlab&researchcenter.html">GHR Labs & Research Center</a>
+  </li>
+  <li class="list-group-item">
+    <a href="patent&publication.html">Patent & Publication</a>
+  </li>
+  <li class="list-group-item"><a href="partnerships.html">Partnerships</a></li>
+  <li class="list-group-item">
+    <a href="researchgrant.html">Research Grant</a>
+  </li>
+  </ul>
+  </li>
+  <li class="nav-item">
+    <a
+    class="nav-link active accordion-button collapsed my-1"
+    aria-current="page"
+    href="#"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#nav-item-4"
+    aria-expanded="false"
+    aria-controls="nav-item-4"
+    >
+    Media
+  </a>
+  <ul
+  class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+  id="nav-item-4"
+  >
+  <li class="list-group-item"><a href="blogsection.html">Blog-Section</a></li>
+  <li class="list-group-item">
+    <a href="media.html">Media Coverage</a>
+  </li>
+  <li class="list-group-item"><a href="campusbuzz.html">campus Buzz</a></li>
+  <li class="list-group-item"><a href="photogallery.html">Photo Gallery</a></li>
+  </ul>
+  </li>
+  <li class="nav-item">
+    <a
+    class="nav-link active accordion-button collapsed my-1"
+    aria-current="page"
+    href="#"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#nav-item-5"
+    aria-expanded="false"
+    aria-controls="nav-item-5"
+    >
+    Campus Life
+  </a>
+  <ul
+  class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+  id="nav-item-5"
+  >
+  <li class="list-group-item"><a href="placement.html">Placement</a></li>
+  <li class="list-group-item">
+    <a href="campusfacilities.html">Campus facilities</a>
+  </li>
+  <li class="list-group-item"><a href="studentclubs">Student Clubs</a></li>
+  <li class="list-group-item"><a href="hostel.html">Hostels</a></li>
+  <li class="list-group-item"><a href="sports.html">Sports</a></li>
+  <li class="list-group-item">
+    <a href="safetysecurities.html">safety & Securities</a>
+  </li>
+  <li class="list-group-item">
+    <a href="transportation.html">Transportation</a>
+  </li>
+  <li class="list-group-item"><a href="classroom.html">Classroom</a></li>
+  <li class="list-group-item"><a href="elearning.html">E-learning</a></li>
+  <li class="list-group-item">
+    <a href="healthservices.html">Health SErvices</a>
+  </li>
+  </ul>
+  </li>
+  <li class="nav-item">
+    <a
+    class="nav-link active accordion-button collapsed my-1"
+    aria-current="page"
+    href="#"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#nav-item-6"
+    aria-expanded="false"
+    aria-controls="nav-item-6"
+    >
+    Events
+  </a>
+      <ul
+      class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+      id="nav-item-6"
+      >
+        <li class="list-group-item">
+          <a href="dhamaaldandiya.html">Dhamaal Dandiya</a>
+        </li>
+        <li class="list-group-item"><a href="kashti.html">Kashti</a></li>
+        <li class="list-group-item"><a href="antaragni.html">Antaragni</a></li>
+        <li class="list-group-item"><a href="rpl.html">RPL</a></li>
+        <li class="list-group-item"><a href="shivmahotsav.html">Shiv Mahotsav</a></li>
+        <li class="list-group-item"><a href="ganeshutsav.html">Ganesh Utsav</a></li>
+        <li class="list-group-item">
+          <a href="graduationceremony.html">Graduation Ceremony</a>
+        </li>
+        <li class="list-group-item">
+          <a href="startuproadshow.html">Startup Road Show</a>
+        </li>
+        </ul>
+          </li>
+          <li class="nav-item">
+            <a
+            class="nav-link active accordion-button collapsed my-1"
+            href="#"
+            >Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+</section>
+
+</header>
+<main>
+    <section>
+        <div class="container" style="padding: 25px;">
+            <div class="row row-cols-4 pt-0px">
+                <div class="col-md-4 col-lg-4 col-sm-6 active" style="padding: 15px">
+                    <div class="card" style="border-radius: 30px;">
+                        <a href="#" class="gallery-overlay">
+                            <img src="https://rgicdn.s3.ap-south-1.amazonaws.com/raisoni/images/gallery/nsp/nsp-18-1.avif" alt="RGI" class="img-fluid" style="border-radius: 30px 30px 30px 30px;">
+                            <div class="gallery-overlay"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 active" style="padding: 15px">
+                    <div class="card" style="border-radius: 30px;">
+                        <a href="#" class="gallery-overlay">
+                            <img src="https://rgicdn.s3.ap-south-1.amazonaws.com/raisoni/images/gallery/nsp/nsp-18-2.avif" alt="RGI" class="img-fluid" style="border-radius: 30px 30px 30px 30px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 active" style="padding: 15px">
+                    <div class="card" style="border-radius: 30px;">
+                        <a href="#" class="gallery-overlay">
+                            <img src="https://rgicdn.s3.ap-south-1.amazonaws.com/raisoni/images/gallery/nsp/nsp-18-3.avif" alt="RGI" class="img-fluid" style="border-radius: 30px 30px 30px 30px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 active" style="padding: 15px">
+                    <div class="card" style="border-radius: 30px;">
+                        <a href="#" class="gallery-overlay">
+                            <img src="https://rgicdn.s3.ap-south-1.amazonaws.com/raisoni/images/gallery/nsp/nsp-18-4.avif" alt="RGI" class="img-fluid" style="border-radius: 30px 30px 30px 30px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 active" style="padding: 15px">
+                    <div class="card" style="border-radius: 30px;">
+                        <a href="#" class="gallery-overlay">
+                            <img src="https://rgicdn.s3.ap-south-1.amazonaws.com/raisoni/images/gallery/nsp/nsp-18-5.avif" alt="RGI" class="img-fluid" style="border-radius: 30px 30px 30px 30px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 active" style="padding: 15px">
+                    <div class="card" style="border-radius: 30px;">
+                        <a href="#" class="gallery-overlay">
+                            <img src="https://rgicdn.s3.ap-south-1.amazonaws.com/raisoni/images/gallery/nsp/nsp-18-6.avif" alt="RGI" class="img-fluid" style="border-radius: 30px 30px 30px 30px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 active" style="padding: 15px">
+                    <div class="card" style="border-radius: 30px;">
+                        <a href="#" class="gallery-overlay">
+                            <img src="https://rgicdn.s3.ap-south-1.amazonaws.com/raisoni/images/gallery/nsp/nsp-18-7.avif" alt="RGI" class="img-fluid" style="border-radius: 30px 30px 30px 30px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 active" style="padding: 15px">
+                    <div class="card" style="border-radius: 30px;">
+                        <a href="#" class="gallery-overlay">
+                            <img src="https://rgicdn.s3.ap-south-1.amazonaws.com/raisoni/images/gallery/nsp/nsp-18-8.avif" alt="RGI" class="img-fluid" style="border-radius: 30px 30px 30px 30px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="photogallery.html" class="cd-button" style="border-radius: 10px 0px 10px 0px; padding: 15px; background-color: #5c0f8b; text-align: center; color: #fff; padding-top: 10px; margin-top: 20px;"> Back to Album</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <section>
+        <div class="container py-4">
+            <div class="row justify-content-evenly">
+                <!-- accordion start  -->
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <!-- accordion 1 -->
+                    <div class="accordion" id="accordion1">
+                        <div class="accordion-item border-0 bg-transparent">
+                            <h2 class="accordion-header">
+                                <div class="row justify-content-between">
+                                    <div class="col-9 pe-0">
+                                        <button class="border-0 outline-0 bg-transparent accordion-btn text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Important Links
+                                        </button>
+                                    </div>
+                                    <div class="col-3 fs-5 pt-2 d-sm-none" style="color: #af71d5;">
+                                        <span data-bs-target="#collapseOne" data-bs-toggle="collapse"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion1">
+                                <div class="accordion-body px-0">
+                                    <ul class="list-group fs-6 custom-ul">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                        <li class="list-group-item">A fourth item</li>
+                                        <li class="list-group-item">And a fifth one</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- accordion 2 -->
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="accordion" id="accordion2">
+                        <div class="accordion-item border-0 bg-transparent">
+                            <h2 class="accordion-header">
+                                <div class="row justify-content-between">
+                                    <div class="col-9 pe-0">
+                                        <button class="border-0 outline-0 bg-transparent accordion-btn text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            Important Links
+                                        </button>
+                                    </div>
+                                    <div class="col-3 fs-5 pt-2 d-sm-none" style="color: #af71d5;">
+                                        <span data-bs-toggle="collapse" data-bs-target="#collapseTwo"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordion2">
+                                <div class="accordion-body px-0">
+                                    <ul class="list-group fs-6 custom-ul">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                        <li class="list-group-item">A fourth item</li>
+                                        <li class="list-group-item">And a fifth one</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- accordion 3 -->
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="accordion" id="accordion3">
+                        <div class="accordion-item border-0 bg-transparent">
+                            <h2 class="accordion-header">
+                                <div class="row justify-content-between">
+                                    <div class="col-9 pe-0">
+                                        <button class="border-0 outline-0 bg-transparent accordion-btn text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            Important Links
+                                        </button>
+                                    </div>
+                                    <div class="col-3 fs-5 pt-2 d-sm-none" style="color: #af71d5;">
+                                        <span data-bs-toggle="collapse" data-bs-target="#collapseThree"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordion3">
+                                <div class="accordion-body px-0">
+                                    <ul class="list-group fs-6 custom-ul">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                        <li class="list-group-item">A fourth item</li>
+                                        <li class="list-group-item">And a fifth one</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- accordion 4 -->
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="accordion" id="accordion4">
+                        <div class="accordion-item border-0 bg-transparent">
+                            <h2 class="accordion-header">
+                                <div class="row justify-content-between">
+                                    <div class="col-9 pe-0">
+                                        <button class="border-0 outline-0 bg-transparent accordion-btn text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                            Important Links
+                                        </button>
+                                    </div>
+                                    <div class="col-3 fs-5 pt-2 d-sm-none" style="color: #af71d5;">
+                                        <span data-bs-toggle="collapse" data-bs-target="#collapseFour"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordion4">
+                                <div class="accordion-body px-0">
+                                    <ul class="list-group fs-6 custom-ul">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                        <li class="list-group-item">A fourth item</li>
+                                        <li class="list-group-item">And a fifth one</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- accordion end  -->
+            </div>
+
+            <!-- footer dome white  -->
+            <div class="row justify-content-center mt-3 mb-5">
+                <div class="col-md-7 d-none d-sm-block">
+                    <img src="assets/img/footer-dome-white.png" class="img1-fluid" style="max-width: 80%;">
+                </div>
+                <div class="col-md-4 text-white d-flex justify-content-center">
+                    <div style="width: 35px;height: 35px;  border-radius: 50%; padding-top:6px" class="border border-danger text-center m-2">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+
+                    <div style="width: 35px;height: 35px;  border-radius: 50%; padding-top:6px" class="border border-danger text-center m-2">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+
+                    <div style="width: 35px;height: 35px;  border-radius: 50%; padding-top:6px" class="border border-danger text-center m-2">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+
+                    <div style="width: 35px;height: 35px;  border-radius: 50%; padding-top:6px" class="border border-danger text-center m-2">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- copyright -->
+            <div class="row text-white justify-content-between" style="font-size: 12px;">
+                <div class="col-md-7">
+                    <p>© 2024 All Rights Reserved. Design & Developed by <a class="custom-link" href="#">Global Education Limited.</a></p>
+                </div>
+                <div class="col-md-4 d-flex footer-nav align-items-center">
+                    <a class="custom-link" href="#">Privacy Policy</a>
+                    <a class="custom-link" href="#">Terms & Conditions</a>
+                    <a class="custom-link" href="#">Refund & Cancellation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6f004023d0.js" crossorigin="anonymous"></script>
+</body>
+</html>

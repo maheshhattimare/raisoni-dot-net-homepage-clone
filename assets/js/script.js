@@ -4,7 +4,13 @@ const assistantCloseBtn = document.getElementById("assistant-close-btn");
 const ninaChatCloseBtn = document.getElementById("nina-chat-close-btn");
 const ninaChatBlock = document.getElementById("nina-chat-block");
 
-//nina assistant
+document.addEventListener("DOMContentLoaded", function () { 
+fetch("navbar.html").then((response) => response.text())
+.then((data) => {  document.getElementById("navbar-placeholder").innerHTML = data;  })
+.catch((error) => console.error("Error loading header:", error)); 
+});
+
+
 window.document.addEventListener("DOMContentLoaded", () => {
   ninaHover.style.display = "block";
 });
@@ -19,4 +25,4 @@ ninaAssistant.addEventListener("click", () => {
 ninaChatCloseBtn.addEventListener("click", () => {
   ninaChatBlock.style.display = "none";
 });
-// nina assistant end
+

@@ -1,0 +1,251 @@
+* {box-sizing: border-box}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+.apple{
+    border-radius: 10px 0px 10px 0px;
+    background-color: white;
+    color:#5c0f8b;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+.dropdown-menu{
+    background-color: white;
+    border-radius: 10px 0px 10px 0px;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.dropdown-item{
+    color: black;
+    font-size: 14px;
+    padding: 8px 16px;
+
+}
+
+
+.dropdown-item:hover{
+    color:#5c0f8b;
+    background-color: #d4c9e24d ;
+
+}
+.dropdown:hover .dropdown-menu{
+    display: block !important;
+}
+
+.cont {
+    position: relative;
+}
+header.header-bg {
+    height: 250px; 
+    background: url(../images/breadcrumb-img.avif); 
+    background-size: cover; 
+    background-position: center -270px;
+    display: block;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left:0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.30); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    opacity:1;
+
+}
+.overlay > .text {
+    color: white;
+    font-size: 15px;
+    padding-top: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+section,
+section.dark {
+    padding: 70px 0;
+}
+
+section.dark {
+    background-color: #f8f6fa;
+}
+/*.fa-btn {
+  background-color: #5c0f8b;
+  font-size: 0.7rem;
+  font-weight: 400;
+  border: 0;
+  outline: 0;
+  letter-spacing: 1.1px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px;
+  position: fixed;
+  z-index: 10;
+  /* right: 0; */
+}
+
+.section-lg {
+    padding: 80px;
+    position: relative;
+}
+h6{
+    font-style: italic;
+    color: purple;
+}
+.bg-purple {
+    background-color: #d4c9e22b;
+}
+.section-lg .bg-purple{
+    background-color: #d4c9e22b;
+
+}
+
+main .section-lg-2{
+	background-color: #d4c9e22b;
+
+}
+
+
+h2{
+    font-weight: bold;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: bounceIn;
+    animation-duration: 1s;
+
+}
+
+li::marker{
+    color: purple;
+    font-size: 150%;
+}
+
+.ninaa-assistant img {
+  width: 43px;
+  height: 43px;
+}
+.ninaa-assistant {
+  border: 6px solid #75b740;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+}
+.ninaa-hover {
+  font-size: 14px;
+  position: fixed;
+  bottom: 25px;
+  right: 93px;
+  color: #141414;
+  font-weight: 400;
+  background-color: #fff;
+  z-index: 10;
+  letter-spacing: 1.1px;
+  border-radius: 5px;
+}
+/* animation  */
+#nina-chat-block {
+  bottom: -500px;
+  opacity: 0;
+  right: 20px;
+  max-width: 350px;
+  display: none;
+}
+#nina-chat-block.in-amin {
+  animation-name: inAnim;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes inAnim {
+  100% {
+    opacity: 1;
+    bottom: 0;
+}
+}
+.fa-btn {
+  background-color: #5c0f8b;
+  font-size: 0.7rem;
+  font-weight: 400;
+  border: 0;
+  outline: 0;
+  letter-spacing: 1.1px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px;
+  position: fixed;
+  z-index: 10;
+  /* right: 0; */
+}
+.enquire-fab {
+  top: 50%;
+  right: -32px;
+  transform: rotateZ(-90deg);
+}
+.whatapp-fab {
+  top: 58%;
+  right: -113px;
+  transition: right 0.4s ease;
+  width: 146px;
+}
+.mai-fab {
+  top: 63%;
+  right: -113px;
+  transition: right 0.3s ease;
+  width: 146px;
+}
+.whatapp-fab:hover {
+  right: 0;
+}
+.mai-fab:hover {
+  right: 0;
+}
+
+
+footer {
+  background-color: #5c0f8b;
+}
+.accordion-btn{
+  font-size: 19px;
+  color: #af71d5;
+  letter-spacing: 2px;
+}
+.custom-ul li{
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.custom-ul li:hover{
+  color: red;
+}
+.custom-link{
+  text-decoration: none;
+  color:#fff;
+  margin-right: 10px;
+}
+.custom-link:hover{
+  color: red;
+}
+/* footer end */
+
+
+.img-fluid{
+    animation: fadeIn;
+    animation-duration: 2.3s;
+}

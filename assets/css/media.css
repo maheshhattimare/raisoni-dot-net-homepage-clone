@@ -1,0 +1,404 @@
+button.btn {
+	display: inline-block;
+	border: 1px solid #7030a0;
+	border-radius: 5px;
+	padding: 5px 5px;
+	margin: 5px;
+	color: #7030a0;
+	text-decoration: none;
+	min-width: 90px;
+	padding: 10px 20px !important;
+	border-radius: 10px 0 10px 0;
+	border: 1px solid #5C0F8B;
+	transition: all ease 1s;
+	}
+	button.btn:hover {
+	position: relative;
+	top: -5px;
+	}
+
+	.btn.active {
+	    background-color: #5C0F8B;
+	    color: #ffffff !important;
+	}
+
+	.btn:hover{
+		color: #7030a0;
+		background-color: #5C0F8B;
+	    color: #ffffff !important;
+	}
+
+	a:hover{
+		color: #7030a0;
+	}
+
+	.navbar-nav li > a {
+  	margin-right: 10px;
+	}
+	.lg-nav-item-list a {
+	  font-size: 0.8rem;
+	  font-weight: 600;
+	  color: #333 !important;
+	  border: 0;
+	  transition: all 0.2s ease;
+	}
+	.lg-nav-item-list a:hover {
+	  color: #5c0f8b !important;
+	  background-color: rgb(247, 245, 245);
+	}
+
+	.lg-nav-item:hover .lg-nav-item-list {
+	  display: block !important;
+}
+
+	.gxcpl-button{
+	display: inline-block;
+	border: 1px solid #7030a0;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin: 5px;
+	color: #7030a0;
+	text-decoration: none;
+	min-width: 90px;
+	background-color: #5C0F8B;
+	color: #ffffff !important;
+	padding: 10px 20px !important;
+	border-radius: 10px 0 10px 0;
+	border: 1px solid #5C0F8B;
+	}
+
+	.nav-link.active{
+	font-weight: 600;
+}
+
+	/*header start*/
+	.header {
+	background-size: cover;
+	background-position: bottom;
+	min-height: 260px;
+	width: 100%;
+	align-items: center;
+	background-repeat: no-repeat;
+	position: relative;
+	}
+	.custom-nav {
+	background: linear-gradient(to bottom,#000, rgba(0, 0, 0, 0.639), transparent) !important;
+	}
+
+	.custom-btn {
+	font-size: 14px;
+	padding: 8px 10px;
+	border: 1px solid #fa844e;
+	background-color: #fff;
+	color: #5c0f8b;
+	border-radius: 8px 0;
+	text-decoration: none;
+	}
+
+	.custom-btn:hover{
+        color: #7030a0 !important;
+        background-color: #fff !important;
+    }
+	.curve-png {
+	position: absolute;
+	bottom: 0px;
+	left: 80px;
+	}/* header ends */
+
+	.card{
+	border: 1px solid #5c0f8b;
+	}
+
+	div > button:hover {
+	background-color: #5C0F8B;
+	color: #ffffff !important;
+	}
+
+	a{
+	text-decoration: none;
+	color: #7030a0;
+	}
+
+	section > braedcrumb-section{
+	background-image: url(https://rgicdn.s3.ap-south-1.amazonaws.com/raisoni/images/breadcrumb-img.avif);
+	background-repeat: no-repeat;
+	text-align: center;
+	background-position: 100% 85%;
+	background-size: cover;
+	position: relative;
+	}
+
+	/* Added responsive styles */
+
+	@media only screen and (max-width: 1200px) {
+	.button-group {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.button-group button {
+		margin-bottom: 10px;
+	}
+
+	.card {
+		margin-bottom: 20px;
+	}
+
+	.col-2 {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.card img {
+		width: 60px;
+		height: 60px;
+	}
+
+	.card a {
+		font-size: 16px;
+	}
+	}
+
+	@media only screen and (max-width: 992px) {
+	.button-group {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.button-group button {
+		margin-bottom: 10px;
+	}
+
+	.card {
+		margin-bottom: 20px;
+	}
+
+	.col-6 {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.card img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.card a {
+		font-size: 14px;
+	}
+	}
+
+	@media only screen and (max-width: 768px) {
+	.button-group {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.button-group button {
+		margin-bottom: 10px;
+	}
+
+	.card {
+		margin-bottom: 20px;
+	}
+
+	.col-6 {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.card img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.card a {
+		font-size: 12px;
+	}
+	}
+
+	@media only screen and (max-width: 480px) {
+	.button-group {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.button-group button {
+		margin-bottom: 10px;
+	}
+
+	.card {
+		margin-bottom: 20px;
+	}
+
+	.col-2 {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.card img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.card a {
+		font-size: 10px;
+	}
+	}
+
+	.breadcrumb li {
+	color: #fff !important;
+	font-weight: 600;
+	margin-right: 15px;
+	}
+
+	.breadcrumb li a{
+	text-align: right;
+	text-decoration: none;
+	color: #ffffff;
+	}
+
+	.breadcrumb li a:hover{
+	color: orangered;
+	}
+
+	ul.breadcrumb {
+	margin: initial;
+	text-align: revert;
+	justify-content: center;
+	padding-left: inherit;
+	}
+
+	@media screen and (max-width: 992px) and (min-width: 320px) {
+	.breadcrumb-title h1 {
+		font-size: 25px;
+	}
+	}
+
+	.breadcrumb-title h1 {
+	color: #fff;
+	font-size: 2.5rem;
+	font-family: 'Red Hat Display', sans-serif !important;
+	font-style: normal;
+	margin-top: 120px;
+	}
+
+	.fa {
+	display: inline-block;
+	font-size: inherit;
+	text-rendering: auto;
+	}
+
+	/* footer start */
+	footer {
+	background-color: #5c0f8b;
+	}
+	.accordion-btn{
+	font-size: 19px;
+	color: #af71d5;
+	letter-spacing: 2px;
+	}
+	.custom-ul li{
+	background-color: transparent;
+	color: #fff;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	padding-bottom: 5px;
+	font-weight: 300;
+	cursor: pointer;
+	transition: color 0.3s ease;
+	}
+	.custom-ul li:hover{
+	color: red;
+	}
+	.custom-link{
+	text-decoration: none;
+	color:#fff;
+	margin-right: 10px;
+	}
+	.custom-link:hover{
+	color: red;
+	}
+	.fa-btn {
+  background-color: #5c0f8b;
+  font-size: 0.7rem;
+  font-weight: 400;
+  border: 0;
+  outline: 0;
+  letter-spacing: 1.1px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px;
+  position: fixed;
+  z-index: 10;
+}
+.enquire-fab {
+  top: 50%;
+  right: -32px;
+  transform: rotateZ(-90deg);
+}
+.whatapp-fab {
+  top: 61%;
+  right: -113px;
+  transition: right 0.4s ease;
+  width: 146px;
+}
+.mai-fab {
+  top: 67%;
+  right: -113px;
+  transition: right 0.3s ease;
+  width: 146px;
+}
+.whatapp-fab:hover {
+  right: 0;
+}
+.mai-fab:hover {
+  right: 0;
+}
+.ninaa-assistant img {
+  width: 43px;
+  height: 43px;
+}
+.ninaa-assistant {
+  border: 6px solid #75b740;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+}
+.ninaa-hover {
+  font-size: 14px;
+  position: fixed;
+  bottom: 25px;
+  right: 93px;
+  color: #141414;
+  font-weight: 400;
+  background-color: #fff;
+  z-index: 10;
+  letter-spacing: 1.1px;
+  border-radius: 5px;
+}
+/* animation  */
+#nina-chat-block {
+  bottom: -500px;
+  opacity: 0;
+  right: 20px;
+  max-width: 350px;
+  display: none;
+}
+#nina-chat-block.in-amin {
+  animation-name: inAnim;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes inAnim {
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+/* fab end */
+	/* footer end */

@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*#5C0F8B*/
+.text-purple {
+  color: #5c0f8b !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*header start*/
+.custom-nav {
+  background: linear-gradient(
+    to bottom,
+    #000,
+    rgba(0, 0, 0, 0.639),
+    transparent
+  ) !important;
+}
+/* large screen nav bar start */
+.navbar-nav li > a {
+  margin-right: 10px;
+}
+.lg-nav-item-list a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #333 !important;
+  border: 0;
+  transition: all 0.2s ease;
+}
+.lg-nav-item-list a:hover {
+  color: #5c0f8b !important;
+  background-color: rgb(247, 245, 245);
+}
+
+.lg-nav-item:hover .lg-nav-item-list {
+  display: block !important;
+}
+
+/* large screen nav bar end  */
+.custom-btn {
+  font-size: 14px;
+  padding: 8px 10px;
+  border: 1px solid #fa844e;
+  background-color: #fff;
+  color: #5c0f8b;
+  border-radius: 8px 0;
+  text-decoration: none;
+  transition: padding 0.4s ease;
+}
+.para {
+  font-size: 14px;
+  color: #888787;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.custom-btn:hover {
+  padding: 10px;
+}
+.curve-png {
+  position: absolute;
+  bottom: 0px;
+  left: 80px;
+  max-width: 160px;
+}
+/* fab start */
+.fa-btn {
+  background-color: #5c0f8b;
+  font-size: 0.7rem;
+  font-weight: 400;
+  border: 0;
+  outline: 0;
+  letter-spacing: 1.1px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px;
+  position: fixed;
+  z-index: 10;
+}
+.enquire-fab {
+  top: 50%;
+  right: -32px;
+  transform: rotateZ(-90deg);
+}
+.whatapp-fab {
+  top: 61%;
+  right: -113px;
+  transition: right 0.4s ease;
+  width: 146px;
+}
+.mai-fab {
+  top: 67%;
+  right: -113px;
+  transition: right 0.3s ease;
+  width: 146px;
+}
+.whatapp-fab:hover {
+  right: 0;
+}
+.mai-fab:hover {
+  right: 0;
+}
+.ninaa-assistant img {
+  width: 43px;
+  height: 43px;
+}
+.ninaa-assistant {
+  border: 6px solid #75b740;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+}
+.ninaa-hover {
+  font-size: 14px;
+  position: fixed;
+  bottom: 25px;
+  right: 93px;
+  color: #141414;
+  font-weight: 400;
+  background-color: #fff;
+  z-index: 10;
+  letter-spacing: 1.1px;
+  border-radius: 5px;
+}
+/* animation  */
+#nina-chat-block {
+  bottom: -500px;
+  opacity: 0;
+  right: 20px;
+  max-width: 350px;
+  display: none;
+}
+#nina-chat-block.in-amin {
+  animation-name: inAnim;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes inAnim {
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+/* fab end */
+/*header end*/
+/* section 2 */
+.about-section.counter-box {
+  text-wrap: wrap;
+  width: 100px;
+}
+.counter-box h4 {
+  color: #5c0f8b;
+  font-weight: 600;
+}
+.counter-box p {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.hr-line {
+  margin: 20px 0 10px 0;
+  width: 100%;
+  background: #5c0f8b;
+  height: 1px;
+}
+/*Our Accreditations start*/
+.grey-hover img {
+  filter: grayscale(1);
+  transition: filter 0.3s ease !important;
+}
+.grey-hover img:hover {
+  filter: grayscale(0);
+}
+/* student life & campus infra start */
+.campus-grid-container {
+  display: grid;
+  gap: 5px;
+  width: 100%;
+  overflow: hidden;
+  /* max-height: 400px; */
+  grid-template-columns: 20% 20% 30% 10% 20%;
+}
+.campus-grid-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+/* student life & campus infra end */
+
+/* impeccable placement section start*/
+.slider {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+}
+.slider .slider-track img {
+  width: 90px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+@keyframes slide-logo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.slider .slider-track {
+  animation: 8s slide-logo linear infinite;
+}
+/* impeccable placement section end*/
+.heading-2 {
+  background: linear-gradient(to right, #5c0f8b 0%, #de441d 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem !important;
+  font-weight: 600;
+  margin-bottom: 1px;
+}
+.heading-2-sub-heading {
+  font-size: 14px;
+}
+/* card section  */
+.container-gradient {
+  background: linear-gradient(to bottom, #fff, #e7e7e7);
+}
+.outer::-webkit-scrollbar {
+  width: 0px;
+}
+.card {
+  flex: 0 0 auto;
+  /* flex-grow,flex-shrink,flex-basis */
+}
+/* card section end  */
+.custom-dr-btn {
+  border: 1px solid #5c0f8b;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  position: relative;
+}
+.arrowdown-icon {
+  color: #fff;
+  padding: 6px 10px;
+  position: absolute;
+  right: 0;
+  background-color: #5c0f8b;
+  top: 0px;
+  border-radius: 4px;
+}
+.search-btn {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  color: #fff;
+  padding: 6px 10px;
+  background-color: #5c0f8b;
+  border-radius: 8px;
+}
+.search-btn i {
+  font-weight: 700;
+  margin-top: 7px;
+}
+/*heading-3 start*/
+.heading-3 h4 {
+  font-weight: 600;
+}
+.heading-3 h4 span {
+  color: #999;
+}
+.view-more-text {
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.view-more-text:hover {
+  color: #fb8500 !important;
+}
+/*heading-3 end*/
+/*diploma programs start*/
+.custom-card .card-body h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.custom-card .card-body .share-icon {
+  font-size: 15px;
+}
+.card-text-icon {
+  color: #fb8500;
+}
+/*diploma programs end*/
+/* image gallery start  */
+.gallery {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 20% 15% 30% 15% 20%;
+  grid-template-rows: 190px 190px;
+  /* grid-template-rows: 50% 50%; */
+}
+.gallery-img {
+  height: 100%;
+  width: 100%;
+}
+.img-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.img-2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.img-3 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.img-4 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.img-5 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.img-6 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.img-7 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+/* image gallery end  */
+/* kimba section start */
+.gradient-hr-line {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #5c0f8b, transparent);
+}
+/* kimba section end*/
+.next-icons {
+  border: 1px solid #5c0f8b;
+  padding-right: 10px;
+  margin-right: 6px;
+}
+/* insta profile  start*/
+.profile-gradient {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+  cursor: pointer;
+}
+.insta-profile {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+/* insta profile end */
+/* footer start */
+footer {
+  background-color: #5c0f8b;
+}
+.accordion-btn {
+  font-size: 18px;
+  color: #af71d5;
+  letter-spacing: 2px;
+}
+.custom-ul li {
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 15px !important;
+}
+.custom-ul li:hover {
+  color: red;
+}
+.custom-link {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+.custom-link:hover {
+  color: orangered;
+}
+.social-icons {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding-top: 5px;
+  border: 1px solid red;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+.social-icons:hover {
+  background-color: #000;
+  border-color: #fff;
+}
+/* footer end */
+
+.step-number {
+  height: 80px;
+  width: 80px;
+  border: 2px solid #5c0f8b;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+.step-number p {
+  font-size: 14px;
+}
+.step-number span {
+  color: #5c0f8b;
+  display: inline-block;
+  margin-top: -5px;
+}
+.step-text {
+  font-size: 15px;
+}
+.p-team-card-hover {
+  transition: all 0.4s ease;
+}
+.p-team-card-hover:hover {
+  border: 1px solid #5c0f8b;
+  scale: 101%;
+}
+.breadcrumb-item-hover li > a:hover {
+  color: red !important;
+}
+/* campus life end  */
+
+/* student club start  */
+.student-club-card {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.student-club-card > div > div :last-child {
+  font-size: 15px;
+  color: #888787;
+  font-weight: 300;
+}
+.student-club-card {
+  transition: background-color 0.1s ease;
+}
+.student-club-card:hover {
+  background-color: #fbf2e3;
+}
+/* student club end  */
+/* safty and security start  */
+.safety-card div:hover {
+  background-color: rgba(251, 242, 227, 0.2);
+}
+.safety-card:hover {
+  margin-top: -10px;
+}
+.safety-card {
+  transition: all 0.3s ease;
+}
+.safety-card div {
+  min-height: 350px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+.safety-card div > img {
+  max-width: 60px;
+}
+/* safety and security end  */
+
+
+/* media queries  */
+@media screen and (max-width: 576px) {
+  .raisoni-logo {
+    max-width: 100px !important;
+  }
+  .heading-2 {
+    font-size: 22px !important;
+  }
+  .university-section span {
+    font-size: 13px;
+  }
+  .profile-gradient {
+    width: 80px;
+    height: 80px;
+  }
+  .accordion-btn {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  .ninaa-assistant {
+    bottom: 14px;
+    right: 14px;
+  }
+  .ninaa-assistant img {
+    width: 35px;
+    height: 35px;
+  }
+  .ninaa-hover {
+    font-size: 11px;
+    bottom: 10px;
+    right: 70px;
+  }
+  #nina-chat-block {
+    max-width: 100%;
+    right: 0;
+  }
+  .para {
+    font-size: 12px;
+  }
+  /* student club start  */
+  .student-club-card > div > div :last-child {
+    font-size: 12px !important;
+  }
+  /* student club end  */
+  .safety-card div {
+    min-height: 300px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  .navbar-nav li > a {
+    color: #000 !important;
+    padding: 8px;
+    font-weight: 500;
+  }
+  .navbar-nav li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    transition: background-color 0.2s ease;
+  }
+  .navbar-nav li:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .nav-item-sub-items li > a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333 !important;
+  }
+  .nav-item-sub-items .list-group-item:hover a {
+    color: #5c0f8b !important;
+  }
+  .campus-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .accordion-btn {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  /* campus life start  */
+  .step-number {
+    height: 65px !important;
+    width: 65px !important;
+  }
+  .step-number p {
+    margin-top: -5px;
+  }
+  /* campus life end  */
+}
+
+/* contact us page css start  */
+
+.contact-card:hover{
+  border: 1px solid rgba(174, 173, 173, 0.954);
+}
+.custom-table{
+  border: 1px solid #5C0F8B;
+}
+.custom-table thead tr th{
+font-weight: 500;
+}
+.custom-table thead tr th{
+  background-color: #f6eefbb9 !important;
+}
+.custom-table tbody tr td{
+  /* font-weight: 500; */
+  color: #6D6F70;
+  font-size: 0.9rem;
+  }
+
+
