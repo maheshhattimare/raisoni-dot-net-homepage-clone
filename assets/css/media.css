@@ -23,13 +23,17 @@ button.btn {
 	}
 
 	.btn:hover{
-		color: #7030a0;
+		
 		background-color: #5C0F8B;
 	    color: #ffffff !important;
 	}
 
-	a:hover{
-		color: #7030a0;
+	.breadcrumb-item a:hover{
+		color: #FF5100 !important;
+	}
+	.text-center a:hover{
+		color: #7030a0 !important;
+
 	}
 
 	.navbar-nav li > a {

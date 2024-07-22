@@ -28,11 +28,12 @@
         <!-- background img -->
         <img
         src="assets/images/ghrce.png"
-        class="img-fluid position-relative"
+        class="img-fluid position-relative "
         style="
         max-height: 40vh;
         width: 100%;
-        object-fit: cover;
+        object-fit:cover;
+        object-position: 0% 90%;
         filter: brightness(70%);
         "
         />
@@ -77,20 +78,25 @@
                <span class="navbar-toggler-icon"></span>
             </button>
             <a href="
-index.html"><img src="assets/images/logo.png" class="pe-sm-4 img-fluid raisoni-logo" style="max-width: 130px;"/></a>
+            index.html"><img src="assets/images/logo.png" class="pe-sm-4 img-fluid raisoni-logo" style="max-width: 130px;"/></a>
             <!-- drop btn start-->
             <div class="dropdown">
                <button
                class="custom-btn dropdown-toggle border-0"
                type="button"
                data-bs-toggle="dropdown"
+               data-bs-auto-close="outside"
                aria-expanded="false"
                style="color: #5c0f8b; background-color: #fff"
                >
                Academics
             </button>
-            <div class="dropdown-menu bg-warning mt-1 p-2">Comming soon...</div>
-         </div>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </div>
          <!-- drop btn end -->
          <div
          class="collapse navbar-collapse justify-content-end"
@@ -144,7 +150,7 @@ index.html"><img src="assets/images/logo.png" class="pe-sm-4 img-fluid raisoni-l
          <a href="eligibility.html" class="list-group-item list-group-item-action"
          >Eligibility</a
          >
-         <a href="#" class="list-group-item list-group-item-action"
+         <a href="admissionhelpline.html" class="list-group-item list-group-item-action"
          >Admission Helpline</a
          >
          <a href="#" class="list-group-item list-group-item-action"
@@ -221,7 +227,7 @@ index.html"><img src="assets/images/logo.png" class="pe-sm-4 img-fluid raisoni-l
    <a href="safetysecurities.html" class="list-group-item list-group-item-action"
    >Safety & Securities</a
    >
-   <a href="#" class="list-group-item list-group-item-action"
+   <a href="transportation.html" class="list-group-item list-group-item-action"
    >Transportation</a
    >
    <a href="classroom.html" class="list-group-item list-group-item-action"
@@ -268,7 +274,7 @@ index.html"><img src="assets/images/logo.png" class="pe-sm-4 img-fluid raisoni-l
 </div>
 </li>
 <li class="nav-item position-relative">
-   <a href="#" class="nav-link active">Contact</a>
+   <a href="contact.html" class="nav-link active">Contact</a>
 </li>
 </ul>
 <!-- small screen nav bar  -->
@@ -330,7 +336,7 @@ id="nav-item-2"
 </li>
 <li class="list-group-item"><a href="eligibility.html">Eligibility</a></li>
 <li class="list-group-item">
-   <a href="#">Admission Helpline</a>
+   <a href="admissionhelpline.html">Admission Helpline</a>
 </li>
 <li class="list-group-item">
    <a href="#">Fees Structure</a>
@@ -423,7 +429,7 @@ id="nav-item-5"
    <a href="safetysecurities.html">safety & Securities</a>
 </li>
 <li class="list-group-item">
-   <a href="#">Transportation</a>
+   <a href="transportation.html">Transportation</a>
 </li>
 <li class="list-group-item"><a href="classroom.html">Classroom</a></li>
 <li class="list-group-item"><a href="elearning.html">E-learning</a></li>
@@ -468,16 +474,149 @@ id="nav-item-6"
 <li class="nav-item">
    <a
    class="nav-link active accordion-button collapsed my-1"
-   href="#"
+   href="contact.html"
    >Contact
 </a>
 </li>
 </ul>
 </div>
 </div>
-</nav>
+    </nav>
 <!-- nav end  -->
+<!-- floating action buttons  -->
+<!-- floating action buttons start  -->
+<button class="fa-btn enquire-fab rounded-top">Enquire Now</button>
+<a
+href="https://wa.me/8010180034"
+class="text-decoration-none text-white"
+target="_blank"
+>
+<button class="fa-btn whatapp-fab rounded-start text-start">
+   <i class="fa-brands fa-whatsapp mx-1 fs-6"></i> Whatsapp Chat
+</button>
+</a>
+<a
+href="mailto:maheshhattmare03@gmail.com"
+class="text-decoration-none text-white"
+target="_blank"
+>
+<button class="fa-btn mai-fab rounded-start text-start">
+   <i class="fa-regular fa-envelope ms-1 me-2 fs-6"></i>Mail
+</button>
+</a>
+<!-- nina start-->
+<div class="ninaa-assistant" id="nina-assistant">
+   <img src="assets/images/niaa.png" alt="ninaa" />
 </div>
+<div class="shadow ninaa-hover" id="nina-hover">
+   <button
+   type="button"
+   id="assistant-close-btn"
+   class="text-start p-1 bg-danger border-0 outline-0 rounded-circle text-white d-flex"
+   style="font-size: 10px; width: 15px; height: 15px"
+   >
+   <i class="fa-solid fa-xmark"></i>
+</button>
+<p class="px-4">Hey! I am Ninaa... Your<br />Admission assistant.</p>
+</div>
+<!-- ninaa click block  start-->
+<div
+id="nina-chat-block"
+class="position-fixed bg-white shadow-lg"
+style="z-index: 11;"
+>
+<div
+class="row justify-content-between text-white px-1 rounded-top"
+style="background-color: #5c0f8b"
+>
+<div class="col-5 d-flex align-items-center text-start">
+   <img src="assets/images/niaa.png" class="w-25 img-fluid" alt="..." />
+   <h5 class="ms-2 pt-2 fs-6">Ninaa</h5>
+</div>
+<div
+class="col-5 fs-6 d-flex flex-end justify-content-end"
+style="cursor: pointer"
+>
+<p class="pt-2 me-3"><i class="fa-solid fa-rotate-right mt-2"></i></p>
+<p id="nina-chat-close-btn" class="pt-1">
+   <i class="fa-solid fa-window-minimize mt-1"></i>
+</p>
+</div>
+</div>
+<!-- chating  start-->
+<div
+class="row overflow-auto bg-white color-dark shadow"
+style="max-height: 400px"
+>
+<div class="col-12 px-0">
+   <iframe
+   src="https://youtube.com/embed/T3Z1Gu7Hhpo"
+   frameborder="0"
+   class="w-100 h-100"
+   ></iframe>
+</div>
+<div class="col-12 my-2">
+   <div class="row py-1 px-2 justify-content-start">
+      <div class="col-1 text-start p-0">
+         <img
+         src="assets/images/niaa.png"
+         alt="ninaa"
+         style="width: 30px"
+         class="img-fluid"
+         />
+      </div>
+      <div class="col-11 text-start card p-2 border-0 shadow">
+         <span class="fw-light" style="font-size: 14px"
+         >Hello !! welcome to Raisoni Education. You're talking to Jiya,
+         the brilliant admission assistant.
+      </span>
+   </div>
+</div>
+<div class="row pt-2 px-2 justify-content-start">
+   <div class="col-1 text-start p-0">
+      <img
+      src="assets/images/niaa.png"
+      alt="ninaa"
+      style="width: 30px"
+      class="img-fluid"
+      />
+   </div>
+   <div class="col-11 text-start card p-2 border-0 shadow">
+      <span class="fw-light" style="font-size: 14px"
+      >Hello !! welcome to Raisoni Education. You're talking to Jiya,
+      the brilliant admission assistant.
+   </span>
+</div>
+</div>
+</div>
+</div>
+<!-- chating  end-->
+<!-- input field  -->
+<form>
+   <div class="row py-2 bg-white border-top justify-content-evenly">
+      <div class="col-10">
+         <input
+         type="text"
+         placeholder="Type your message here..."
+         class="w-100 px-2 fs-6"
+         style="border: 0; outline: 0"
+         />
+      </div>
+      <div class="col-2 text-center">
+         <button
+         class="fs-5 text-white px-2 border-0 outline-0 h-100 rounded-1"
+         style="background-color: #5c0f8b"
+         type="reset"
+         >
+         <i class="fa-solid fa-play"></i>
+      </button>
+   </div>
+</div>
+</form>
+</div>
+<!-- nina click block  end-->
+<!-- nina end  -->
+<!-- floating action buttons end  -->
 </section>
 
 </header>

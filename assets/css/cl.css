@@ -22,9 +22,9 @@ top: -4px;
     color: #ffffff;
 }
 
-a:hover{
-color: #7030a0;
-}
+.breadcrumb-item a:hover{
+		color: #FF5100;
+	}
 
 .navbar-nav li > a {
   margin-right: 10px;

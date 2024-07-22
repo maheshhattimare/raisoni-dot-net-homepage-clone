@@ -9,6 +9,7 @@
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
       <link rel="stylesheet" href="assets/css/lab.css">
       <link rel="stylesheet" href="assets/css/mansoonstyle.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/maheshstyle.css">
    </head>
    <body>
       <header>
@@ -37,94 +38,388 @@
                                 </div>
                                 <!-- drop btn end -->
                    
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                            <ul class="navbar-nav fw-normal">
-                                <li class="nav-item1 dropdown">
-                                    <a class="nav-link " href="#" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false" style="color: white;">
-                                        About
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item1" href="overview.html">Overview</a>
-                                        <a class="dropdown-item1" href="visionmission.html">Vision Mission</a>
-                                        <a class="dropdown-item1" href="leadership.html">Leadership</a>
-                                        <a class="dropdown-item1" href="adminstration.html">Administration</a>
-                                        <a class="dropdown-item1" href="institutionlist.html">Institution List </a>
-                                        <a class="dropdown-item1" href="labs.html">Labs</a>
-                                        <a class="dropdown-item1" href="library.html">Library</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item1 dropdown">
-                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item1" href="studenteducation.html">Student Education Loan</a>
-                                        <a class="dropdown-item1" href="admission.html">Admission Procedure</a>
-                                        <a class="dropdown-item1" href="eligibility.html">Eligibility</a>
-                                        <a class="dropdown-item1" href="admissionhelpline.html">Admission Helpline</a>
-                                        <a class="dropdown-item1" href="feesstructure.html">Fees Structure</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item1 dropdown">
-                                    <a class="nav-link active" aria-current="page" href="#">
-                                        Research
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item1" href="researchexcellence.html">Research Excellence</a>
-                                        <a class="dropdown-item1" href="ghrlabs&researchcenter.html">GHR Labs & Research Center</a>
-                                        <a class="dropdown-item1" href="patent&publication.html">Patent & Publication</a>
-                                        <a class="dropdown-item1" href="paternships.html">Parternships</a>
-                                        <a class="dropdown-item1" href="researchgrant.html">Research Grant</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item1 dropdown">
-                                    <a class="nav-link active" aria-current="page" href="#">
-                                        Media
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item1" href="blogsection.html">Blog-Section</a>
-                                        <a class="dropdown-item1" href="media.html">Media Coverage</a>
-                                        <a class="dropdown-item1" href="campusbuzz.html">Campus Buzz</a>
-                                        <a class="dropdown-item1" href="photogallery.html">Photo Gallery</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item1 dropdown">
-                                    <a class="nav-link active" aria-current="page" href="#">
-                                        Campus Life
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item1" href="mahesh/placement.html">Placement</a>
-                                        <a class="dropdown-item1" href="campusfacilities.html">Campus facilities</a>
-                                        <a class="dropdown-item1" href="studentclubs.html">Student Clubs</a>
-                                        <a class="dropdown-item1" href="hostel.html">Hostels</a>
-                                        <a class="dropdown-item1" href="sports.html">Sports</a>
-                                        <a class="dropdown-item1" href="safetysecurities.html">Safety & Securities</a>
-                                        <a class="dropdown-item1" href="transportation.html">Transportation</a>
-                                        <a class="dropdown-item1" href="classroom.html">Classroom</a>
-                                        <a class="dropdown-item1" href="elearning.html">E-learning</a>
-                                        <a class="dropdown-item1" href="healthservices.html">Health Services</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item1 dropdown">
-                                    <a class="nav-link active" aria-current="page" href="#">
-                                        Events 
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item1" href="#">Dhamaal Dandiya</a>
-                                        <a class="dropdown-item1" href="#">Kashti</a>
-                                        <a class="dropdown-item1" href="#">Antaragini</a>
-                                        <a class="dropdown-item1" href="#">RPL</a>
-                                        <a class="dropdown-item1" href="#">Shiv Mahotsav</a>
-                                        <a class="dropdown-item1" href="#">Ganesh Utsav</a>
-                                        <a class="dropdown-item1" href="#">Graduation Ceremony</a>
-                                        <a class="dropdown-item1" href="#">Startup Road Show</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item1">
-                                    <a class="nav-link active" aria-current="page" href="#">
-                                        Contact
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                                <div
+         class="collapse navbar-collapse justify-content-end"
+         id="navbarNav"
+         >
+         <!-- large screen nav bar  -->
+         <ul
+         class="navbar-nav fw-normal d-none d-lg-flex justify-content-end"
+         >
+         <li class="nav-item position-relative lg-nav-item">
+            <a href="#" class="nav-link active">About</a>
+            <div
+            class="list-group position-absolute start-0 lg-nav-item-list shadow text-nowrap"
+            style="display: none; min-width: 200px;border-radius: 10px 0;"
+            >
+            <a href="overview.html" class="list-group-item list-group-item-action"
+            >Overview</a
+            >
+            <a href="visionmission.html" class="list-group-item list-group-item-action"
+            >Vision - Mission</a
+            >
+            <a href="leadership.html" class="list-group-item list-group-item-action"
+            >Leadership</a
+            >
+            <a href="administration.html" class="list-group-item list-group-item-action"
+            >Administration</a
+            >
+            <a href="Institution-List.html" class="list-group-item list-group-item-action"
+            >Institution list</a
+            >
+            <a href="labs.html" class="list-group-item list-group-item-action"
+            >Labs</a
+            >
+            <a href="library.html" class="list-group-item list-group-item-action"
+            >Library</a
+            >
+         </div>
+      </li>
+      <li class="nav-item position-relative lg-nav-item">
+         <a href="#" class="nav-link active">Admission</a>
+         <div
+         class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+         style="display: none; min-width: 200px;border-radius: 10px 0;"
+         >
+         <a href="studenteducationloan.html" class="list-group-item list-group-item-action"
+         >Student Education loan</a
+         >
+         <a href="admissionprocedure.html" class="list-group-item list-group-item-action"
+         >Admission process</a
+         >
+         <a href="eligibility.html" class="list-group-item list-group-item-action"
+         >Eligibility</a
+         >
+         <a href="admissionhelpline.html" class="list-group-item list-group-item-action"
+         >Admission Helpline</a
+         >
+         <a href="#" class="list-group-item list-group-item-action"
+         >Fees structure</a
+         >
+      </div>
+   </li>
+   <li class="nav-item position-relative lg-nav-item">
+      <a href="#" class="nav-link active">Research</a>
+      <div
+      class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+      style="display: none; min-width: 200px;border-radius: 10px 0;"
+      >
+      <a href="researchexcellence.html" class="list-group-item list-group-item-action"
+      >Research Excellence</a
+      >
+      <a href="ghrlabs&researchcentre.html" class="list-group-item list-group-item-action"
+      >GHR Labs & Research<br />Center</a
+      >
+      <a href="patent&publication.html" class="list-group-item list-group-item-action"
+      >Patent & Publication</a
+      >
+      <a href="partnerships.html" class="list-group-item list-group-item-action"
+      >Partnerships</a
+      >
+      <a href="researchgrant.html" class="list-group-item list-group-item-action"
+      >Research Grant</a
+      >
+   </div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+   <a href="#" class="nav-link active">Media</a>
+   <div
+   class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+   style="display: none; min-width: 200px;border-radius: 10px 0;"
+   >
+   <a href="blogsection.html" class="list-group-item list-group-item-action"
+   >Blogs-Section</a
+   >
+   <a href="media.html" class="list-group-item list-group-item-action"
+   >Media Coverage</a
+   >
+   <a href="campusbuzz.html" class="list-group-item list-group-item-action"
+   >Campus Buzz</a
+   >
+   <a href="photogallery.html" class="list-group-item list-group-item-action"
+   >Photo Gallery</a
+   >
+</div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+   <a href="#" class="nav-link active">Campus Life</a>
+   <div
+   class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+   style="display: none; min-width: 200px;border-radius: 10px 0;"
+   >
+   <a
+   href="placement.html"
+   class="list-group-item list-group-item-action"
+   >Placement</a
+   >
+   <a href="campusfacilities.html" class="list-group-item list-group-item-action"
+   >Campus facilities</a
+   >
+   <a href="studentclubs.html" class="list-group-item list-group-item-action"
+   >Student Clubs</a
+   >
+   <a href="hostel.html" class="list-group-item list-group-item-action"
+   >Hostels</a
+   >
+   <a href="sports.html" class="list-group-item list-group-item-action"
+   >Sports</a
+   >
+   <a href="safetysecurities.html" class="list-group-item list-group-item-action"
+   >Safety & Securities</a
+   >
+   <a href="transportation.html" class="list-group-item list-group-item-action"
+   >Transportation</a
+   >
+   <a href="classroom.html" class="list-group-item list-group-item-action"
+   >Classroom</a
+   >
+   <a href="elearning.html" class="list-group-item list-group-item-action"
+   >E-learning</a
+   >
+   <a href="healthservices.html" class="list-group-item list-group-item-action"
+   >Health-Services</a
+   >
+</div>
+</li>
+<li class="nav-item position-relative lg-nav-item">
+   <a href="#" class="nav-link active">Events</a>
+   <div
+   class="list-group position-absolute start-0 sm-nav-item-list-all shadow text-nowrap lg-nav-item-list"
+   style="display: none; min-width: 200px;border-radius: 10px 0;"
+   >
+   <a href="dhamaaldandiya.html" class="list-group-item list-group-item-action"
+   >Dhammal Dandiya</a
+   >
+   <a href="kashti.html" class="list-group-item list-group-item-action"
+   >Kashti</a
+   >
+   <a href="antaragni.html" class="list-group-item list-group-item-action"
+   >Antaragni</a
+   >
+   <a href="rpl.html" class="list-group-item list-group-item-action"
+   >RPL</a
+   >
+   <a href="shivmohatsav.html" class="list-group-item list-group-item-action"
+   >Shiv Mahotsav</a
+   >
+   <a href="ganeshutsav.html" class="list-group-item list-group-item-action"
+   >Ganesh Utsav</a
+   >
+   <a href="graduationceremony.html" class="list-group-item list-group-item-action"
+   >Graduation Ceremony</a
+   >
+   <a href="startuproadshow.html" class="list-group-item list-group-item-action"
+   >Startup Road Show</a
+   >
+</div>
+</li>
+<li class="nav-item position-relative">
+   <a href="contact.html" class="nav-link active">Contact</a>
+</li>
+</ul>
+<!-- small screen nav bar  -->
+<ul class="navbar-nav fw-normal d-block d-lg-none">
+   <li class="nav-item">
+      <a
+      class="nav-link active accordion-button collapsed my-1"
+      aria-current="page"
+      href="#"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#nav-item-1"
+      aria-expanded="false"
+      aria-controls="nav-item-1"
+      >
+      About
+   </a>
+   <ul
+   class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+   id="nav-item-1"
+   >
+   <li class="list-group-item"><a href="overview.html">Overview</a></li>
+   <li class="list-group-item">
+      <a href="visionmission.html">Vision-Mission</a>
+   </li>
+   <li class="list-group-item"><a href="leadership.html">Leadership</a></li>
+   <li class="list-group-item">
+      <a href="administration.html">Administration</a>
+   </li>
+   <li class="list-group-item">
+      <a href="Institution-List.html">Institution List</a>
+   </li>
+   <li class="list-group-item"><a href="labs.html">Labs</a></li>
+   <li class="list-group-item"><a href="library.html">Library</a></li>
+</ul>
+</li>
+<li class="nav-item">
+   <a
+   class="nav-link active accordion-button collapsed my-1"
+   aria-current="page"
+   href="#"
+   type="button"
+   data-bs-toggle="collapse"
+   data-bs-target="#nav-item-2"
+   aria-expanded="false"
+   aria-controls="nav-item-2"
+   >
+   Admission
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-2"
+>
+<li class="list-group-item">
+   <a href="studenteducationloan.html">Student Education loan</a>
+</li>
+<li class="list-group-item">
+   <a href="admissionprocedure.html">Admission Procedure</a>
+</li>
+<li class="list-group-item"><a href="eligibility.html">Eligibility</a></li>
+<li class="list-group-item">
+   <a href="admissionhelpline.html">Admission Helpline</a>
+</li>
+<li class="list-group-item">
+   <a href="#">Fees Structure</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+   <a
+   class="nav-link active accordion-button collapsed my-1"
+   aria-current="page"
+   href="#"
+   type="button"
+   data-bs-toggle="collapse"
+   data-bs-target="#nav-item-3"
+   aria-expanded="false"
+   aria-controls="nav-item-3"
+   >
+   Research
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-3"
+>
+<li class="list-group-item">
+   <a href="researchexcellence.html">Research Excellence</a>
+</li>
+<li class="list-group-item">
+   <a href="ghrlabs&researchcentre.html">GHR Labs & Research Center</a>
+</li>
+<li class="list-group-item">
+   <a href="patent&publication.html">Patent & Publication</a>
+</li>
+<li class="list-group-item"><a href="partnerships.html">Partnerships</a></li>
+<li class="list-group-item">
+   <a href="researchgrant.html">Research Grant</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+   <a
+   class="nav-link active accordion-button collapsed my-1"
+   aria-current="page"
+   href="#"
+   type="button"
+   data-bs-toggle="collapse"
+   data-bs-target="#nav-item-4"
+   aria-expanded="false"
+   aria-controls="nav-item-4"
+   >
+   Media
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-4"
+>
+<li class="list-group-item"><a href="blogsection.html">Blogs-Section</a></li>
+<li class="list-group-item">
+   <a href="media.html">Media Coverage</a>
+</li>
+<li class="list-group-item"><a href="campusbuzz.html">campus Buzz</a></li>
+<li class="list-group-item"><a href="#">Partnerships</a></li>
+<li class="list-group-item"><a href="photogallery.html">Photo Gallery</a></li>
+</ul>
+</li>
+<li class="nav-item">
+   <a
+   class="nav-link active accordion-button collapsed my-1"
+   aria-current="page"
+   href="#"
+   type="button"
+   data-bs-toggle="collapse"
+   data-bs-target="#nav-item-5"
+   aria-expanded="false"
+   aria-controls="nav-item-5"
+   >
+   Campus Life
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-5"
+>
+<li class="list-group-item"><a href="placement.html">Placement</a></li>
+<li class="list-group-item">
+   <a href="campusfacilities.html">Campus facilities</a>
+</li>
+<li class="list-group-item"><a href="studentclubs.html">Student Clubs</a></li>
+<li class="list-group-item"><a href="hostel.html">Hostels</a></li>
+<li class="list-group-item"><a href="sports.html">Sports</a></li>
+<li class="list-group-item">
+   <a href="safetysecurities.html">safety & Securities</a>
+</li>
+<li class="list-group-item">
+   <a href="transportation.html">Transportation</a>
+</li>
+<li class="list-group-item"><a href="classroom.html">Classroom</a></li>
+<li class="list-group-item"><a href="elearning.html">E-learning</a></li>
+<li class="list-group-item">
+   <a href="healthservices.html">Health Services</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+   <a
+   class="nav-link active accordion-button collapsed my-1"
+   aria-current="page"
+   href="#"
+   type="button"
+   data-bs-toggle="collapse"
+   data-bs-target="#nav-item-6"
+   aria-expanded="false"
+   aria-controls="nav-item-6"
+   >
+   Events
+</a>
+<ul
+class="d-lg-none list-group mb-2 shadow accordion-collapse collapse nav-item-sub-items"
+id="nav-item-6"
+>
+<li class="list-group-item">
+   <a href="dhamaaldandiya.html">Dhamaal Dandiya</a>
+</li>
+<li class="list-group-item"><a href="kashti.html">Kashti</a></li>
+<li class="list-group-item"><a href="antaragni.html">Antaragni</a></li>
+<li class="list-group-item"><a href="rpl.html">RPL</a></li>
+<li class="list-group-item"><a href="shivmohatsav.html">Shiv Mahotsav</a></li>
+<li class="list-group-item"><a href="ganeshutsav.html">Ganesh Utsav</a></li>
+<li class="list-group-item">
+   <a href="graduationceremony.html">Graduation Ceremony</a>
+</li>
+<li class="list-group-item">
+   <a href="startuproadshow.html">Startup Road Show</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+   <a
+   class="nav-link active accordion-button collapsed my-1"
+   href="contact.html"
+   >Contact
+</a>
+</li>
+</ul>
+</div>
                             </div> <!--container div closed-->
                         </nav>
                        

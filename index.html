@@ -42,20 +42,25 @@
                <span class="navbar-toggler-icon"></span>
             </button>
             <a href="
-index.html"><img src="assets/images/logo.png" class="pe-sm-4 img-fluid raisoni-logo" style="max-width: 130px;"/></a>
+            index.html"><img src="assets/images/logo.png" class="pe-sm-4 img-fluid raisoni-logo" style="max-width: 130px;"/></a>
             <!-- drop btn start-->
             <div class="dropdown">
                <button
                class="custom-btn dropdown-toggle border-0"
                type="button"
                data-bs-toggle="dropdown"
+               data-bs-auto-close="outside"
                aria-expanded="false"
                style="color: #5c0f8b; background-color: #fff"
                >
                Academics
             </button>
-            <div class="dropdown-menu bg-warning mt-1 p-2">Comming soon...</div>
-         </div>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </div>
          <!-- drop btn end -->
          <div
          class="collapse navbar-collapse justify-content-end"
@@ -109,7 +114,7 @@ index.html"><img src="assets/images/logo.png" class="pe-sm-4 img-fluid raisoni-l
          <a href="eligibility.html" class="list-group-item list-group-item-action"
          >Eligibility</a
          >
-         <a href="#" class="list-group-item list-group-item-action"
+         <a href="admissionhelpline.html" class="list-group-item list-group-item-action"
          >Admission Helpline</a
          >
          <a href="#" class="list-group-item list-group-item-action"
@@ -186,7 +191,7 @@ index.html"><img src="assets/images/logo.png" class="pe-sm-4 img-fluid raisoni-l
    <a href="safetysecurities.html" class="list-group-item list-group-item-action"
    >Safety & Securities</a
    >
-   <a href="#" class="list-group-item list-group-item-action"
+   <a href="transportation.html" class="list-group-item list-group-item-action"
    >Transportation</a
    >
    <a href="classroom.html" class="list-group-item list-group-item-action"
@@ -295,7 +300,7 @@ id="nav-item-2"
 </li>
 <li class="list-group-item"><a href="eligibility.html">Eligibility</a></li>
 <li class="list-group-item">
-   <a href="#">Admission Helpline</a>
+   <a href="admissionhelpline.html">Admission Helpline</a>
 </li>
 <li class="list-group-item">
    <a href="#">Fees Structure</a>
@@ -388,7 +393,7 @@ id="nav-item-5"
    <a href="safetysecurities.html">safety & Securities</a>
 </li>
 <li class="list-group-item">
-   <a href="#">Transportation</a>
+   <a href="transportation.html">Transportation</a>
 </li>
 <li class="list-group-item"><a href="classroom.html">Classroom</a></li>
 <li class="list-group-item"><a href="elearning.html">E-learning</a></li>
@@ -440,7 +445,7 @@ id="nav-item-6"
 </ul>
 </div>
 </div>
-</nav>
+            </nav>
 <!-- navbar end  -->
 <!-- png -->
 <div class="curve-png d-sm-block d-none">
@@ -487,7 +492,7 @@ target="_blank"
 <div
 id="nina-chat-block"
 class="position-fixed bg-white shadow-lg"
-style="z-index: 11"
+style="z-index: 11;"
 >
 <div
 class="row justify-content-between text-white px-1 rounded-top"
@@ -636,109 +641,71 @@ style="max-height: 400px"
    <!-- card section start  -->
    <section class="container-gradient">
       <div class="container">
-         <div class="row justify-content-evenly align-items-center">
-            <div class="col-12 py-5 d-flex overflow-auto">
-               <div
-               class="card border-0 position-relative me-3 float-end" data-aos="fade-up-left" data-aos-duration="1000"
-               style="max-width:300px;max-height:30rem"
-               >
-               <img
-               src="assets/images/clg_image1.png"
-               class="card-img-top"
-               alt="..."
-               />
-               <div class="card-body">
-                  <h5 class="card-title fs-6">G H Raisoni University, Saikheda</h5>
-                  <p class="text-body-secondary text-muted" style="font-size: 13px; font-weight: 300;">
-                     At G H Raisoni University, we fuel ambition and encourage
-                     transformative thinking for a future of excellence and
-                     growth.
-                  </p>
-                  <a
-                  href="#"
-                  class="custom-btn position-absolute top-100 start-50 translate-middle"
-                  >Learn more</a
-                  >
-               </div>
-            </div>
-            <div
-            class="card border-0 position-relative me-3 float-end" data-aos="fade-up-left" data-aos-duration="1000"
-            style="max-width:300px;max-height:30rem"
-            >
-            <img
-            src="assets/images/clg_image3.png"
-            class="card-img-top"
-            alt="..."
-            />
-            <div class="card-body">
-               <h5 class="card-title fs-6">
-                  G H Raisoni International Skill Tech University, Pune
-               </h5>
-               <p class="text-body-secondary text-muted" style="font-size: 13px; font-weight: 300;">
+        <div class="row justify-content-evenly align-items-center flex-nowrap overflow-auto py-5">
+          <div class="col-3" style="width: 300px;">
+            <div class="card border-0 position-relative" data-aos="fade-up-left" data-aos-duration="1000" style="height:30rem;width: 100%;">
+              <img src="assets/images/clg_image1.png" class="card-img-top img-fluid" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fs-6">G H Raisoni University, Saikheda</h5>
+                <p class="text-body-secondary text-muted" style="font-size: 13px; font-weight: 300;">
                   At G H Raisoni University, we fuel ambition and encourage
                   transformative thinking for a future of excellence and
                   growth.
-               </p>
-               <a
-               href="#"
-               class="custom-btn position-absolute top-100 start-50 translate-middle"
-               >Learn more</a
-               >
+                </p>
+                <a href="#" class="custom-btn position-absolute top-100 start-50 translate-middle">Learn more</a>
+              </div>
             </div>
-         </div>
-         <div
-         class="card border-0 position-relative me-3 float-end" data-aos="fade-up-right" data-aos-duration="1000"
-         style="max-width:300px;max-height:30rem"
-         >
-         <img
-         src="assets/images/clg_image4.png"
-         class="card-img-top"
-         alt="..."
-         />
-         <div class="card-body">
-            <h5 class="card-title fs-6">
-               G H Raisoni Skill Tech University, Nagpur
-            </h5>
-            <p class="text-body-secondary text-muted" style="font-size: 13px; font-weight: 300;">
-               Building a supportive environment to enable innovation,
-               build professional connections, and promote ethical values
-               to prepare students for success in a dynamic global
-               landscape.
-            </p>
-            <a
-            href="#"
-            class="custom-btn position-absolute top-100 start-50 translate-middle"
-            >Learn more</a
-            >
-         </div>
+          </div> 
+
+          <div class="col-3" style="width: 300px;">
+            <div class="card border-0 position-relative" data-aos="fade-up-left" data-aos-duration="1000" style="height:30rem;width: 100%;">
+              <img src="assets/images/clg_image3.png" class="card-img-top img-fluid" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fs-6">G H Raisoni International Skill Tech University, Pune</h5>
+                <p class="text-body-secondary text-muted" style="font-size: 13px; font-weight: 300;">
+                  At G H Raisoni University, we fuel ambition and encourage
+                  transformative thinking for a future of excellence and
+                  growth.
+                </p>
+                <a href="#" class="custom-btn position-absolute top-100 start-50 translate-middle">Learn more</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-3" style="width: 300px;">
+            <div class="card border-0 position-relative" data-aos="fade-up-right" data-aos-duration="1000" style="height:30rem;width: 100%;">
+              <img src="assets/images/clg_image4.png" class="card-img-top img-fluid" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fs-6">G H Raisoni Skill Tech University, Nagpur</h5>
+                <p class="text-body-secondary text-muted" style="font-size: 13px; font-weight: 300;">
+                  Building a supportive environment to enable innovation,
+                  build professional connections, and promote ethical values
+                  to prepare students for success in a dynamic global
+                  landscape.
+                </p>
+                <a href="#" class="custom-btn position-absolute top-100 start-50 translate-middle">Learn more</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-3" style="width: 300px;">
+            <div class="card border-0 position-relative" data-aos="fade-up-right" data-aos-duration="1000" style="height:30rem;width: 100%;">
+              <img src="assets/images/clg_image1.png" class="card-img-top img-fluid" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fs-6">G H Raisoni University, Amravati</h5>
+                <p class="text-body-secondary text-muted" style="font-size: 13px; font-weight: 300;">
+                  G H Raisoni University aims to proactively empower aspiring
+                  young minds with state-of-the-art education, preparing them
+                  to succeed in an ever-evolving global economy.
+                </p>
+                <a href="#" class="custom-btn position-absolute top-100 start-50 translate-middle">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div
-      class="card border-0 position-relative me-3 float-end" data-aos="fade-up-right" data-aos-duration="1000"
-      style="max-width:300px;max-height:30rem"
-      >
-      <img
-      src="assets/images/clg_image1.png"
-      class="card-img-top"
-      alt="..."
-      />
-      <div class="card-body">
-         <h5 class="card-title fs-6">G H Raisoni University, Amravati</h5>
-         <p class="text-body-secondary text-muted" style="font-size: 13px; font-weight: 300;">
-            G H Raisoni University aims to proactively empower aspiring
-            young minds with state-of-the-art education, preparing them
-            to succeed in an ever-evolving global economy.
-         </p>
-         <a
-         href="#"
-         class="custom-btn position-absolute top-100 start-50 translate-middle"
-         >Learn more</a
-         >
-      </div>
-   </div>
-</div>
-</div>
-</div>
-</section>
+    </section>
+    
 <!-- card section end -->
 <!-- Programs section start  -->
 <section>
@@ -760,646 +727,643 @@ style="max-height: 400px"
          <div class="col-12 col-md-6 mb-2">
             <div class="btn-group d-grid custom-dr-btn">
                <button class="btn text-muted text-start" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="background-color: #fff;">
-                  Course</button>
-                  <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="#">course</a></li>
-                  </ul>
-               </div>
-            </div>
-            <div class="col-2">
-               <div class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
-            </div>
-            <!-- Discover Our Programs start -->
-            <div class="col-12">
-               <h3 class="heading-2 fw-bolder mt-5 mb-2 p-1">Discover Our Programs</h3>
-            </div>
-            <div class="col-12 hr-line"></div>
-            <!-- Diploma Programs start -->
-            <div class="row mt-3 justify-content-between">
-               <div class="col-6 heading-3 text-start">
-                  <h4>Diploma Programs<span>(06)</span></h4>
-               </div>
-               <div class="col-5 text-end">
-                  <span class="view-more-text text-muted">View more</span>
-               </div>
-            </div>
-            <!-- cards start-->
-            <div class="row">
-               <div class="col-12 mt-3 mb-4">
-                  <div class="d-flex overflow-auto p-3">
-                     <div class="card shadow border-0 me-3 custom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in Civil Engineering</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in Electronics & Telecomm. Engg.</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in computer Engineering</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in Fire Engineering</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in Mechanical Engineering</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- cards end -->
-               </div>
-            </div>
-            <!-- card end  -->
-            <div class="row mt-3 justify-content-between">
-               <div class="col-6 heading-3 text-start">
-                  <h4>Under Graduate Programs<span>(35)</span></h4>
-               </div>
-               <div class="col-5 text-end">
-                  <span class="view-more-text text-muted">View more</span>
-               </div>
-            </div>
-            <!-- cards start-->
-            <div class="row" data-aos="fade-up" data-aos-duration="1000">
-               <div class="col-12 mt-3 mb-4">
-                  <div class="d-flex overflow-auto p-3">
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in Civil Engineering</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in Electronics & Telecomm. Engg.</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in computer Engineering</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in Fire Engineering</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in Mechanical Engineering</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- cards end -->
-               </div>
-            </div>
-            <!-- card end  -->
-            <div class="row mt-3 justify-content-between">
-               <div class="col-6 heading-3 text-start">
-                  <h4>Post Graduate Programs<span>(18)</span></h4>
-               </div>
-               <div class="col-5 text-end">
-                  <span class="view-more-text text-muted">View more</span>
-               </div>
-            </div>
-            <!-- cards start-->
-            <div class="row" data-aos="fade-up" data-aos-duration="1000">
-               <div class="col-12 mt-3 mb-4">
-                  <div class="d-flex overflow-auto p-3">
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in Civil Engineering</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in Electronics & Telecomm. Engg.</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in computer Engineering</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in Fire Engineering</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
-                        <img src="assets/images/civil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                           <div class="row justify-content-between">
-                              <div class="col-10 text-start">
-                                 <h5 class="card-title">Diploma in Mechanical Engineering</h5>
-                              </div>
-                              <div class="col-2">
-                                 <i class="fa-solid fa-share-nodes share-icon"></i>
-                              </div>
-                           </div>
-                           <p class="card-text">
-                              <div class="row text-muted justify-content-start" style="font-size: 14px;">
-                                 <div class="col-6">
-                                    <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
-                                 </div>
-                                 <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
-                              </div>
-                           </p>
-                           <!-- card buttons -->
-                           <div class="row">
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="custom-btn">Learn more</button>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="div d-grid">
-                                    <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- cards end -->
-               </div>
-            </div>
-            <!-- card end  -->
-            <!-- Diploma Programs end -->
-            <!-- button  -->
-            <div class="col-12 text-center">
-               <button class="custom-btn">View more domains</button>
+               Course</button>
+               <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">course</a></li>
+               </ul>
             </div>
          </div>
-      </div>
-   </section>
-   <!-- Programs section end  -->
-   <!-- Our Accreditations start  -->
-   <section class="py-5 overflow-hidden">
-      <div class="container mb-5">
-         <div class="row justify-content-center align-items-center">
-            <div class="col-md-3 pe-0 text-center mb-3">
-               <h3 class="heading-2" data-aos="fade-right" data-aos-duration="1000">Our Accreditations</h3>
+         <div class="col-2">
+            <div class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+         </div>
+         <!-- Discover Our Programs start -->
+         <div class="col-12">
+            <h3 class="heading-2 fw-bolder mt-5 mb-2 p-1">Discover Our Programs</h3>
+         </div>
+         <div class="col-12 hr-line"></div>
+         <!-- Diploma Programs start -->
+         <div class="row mt-3 justify-content-between">
+            <div class="col-6 heading-3 text-start">
+               <h4>Diploma Programs<span>(06)</span></h4>
             </div>
-            <div class="col-md-9 text-center grey-hover">
-               <img src="assets/images/dvv-logo.png" alt="..." width="100px" height="100px" class="p-2 mx-3 img-fluid" data-aos="flip-left" data-aos-duration="800">
-               <img src="assets/images/naaca-logo.png" alt="..." width="100px" height="100px" class="p-2 mx-3 img-fluid" data-aos="flip-left" data-aos-duration="800">
-               <img src="assets/images/naac-logo.png" alt="..." width="100px" height="100px" class="p-2 mx-3 img-fluid" data-aos="flip-left" data-aos-duration="800">
-               <img src="assets/images/nba-logo.png" alt="..." width="100px" height="100px" class="p-2 mx-3 img-fluid" data-aos="flip-left" data-aos-duration="800">
-               <img src="assets/images/aicte-logo.png" alt="..." width="100px" height="100px" class="p-2 mx-3 img-fluid" data-aos="flip-left" data-aos-duration="800">
-               <img src="assets/images/ariia-logo.png" alt="..." width="100px" height="100px" class="p-2 mx-3 img-fluid" data-aos="flip-left" data-aos-duration="800">
+            <div class="col-5 text-end">
+               <span class="view-more-text text-muted">View more</span>
             </div>
          </div>
-      </div>
-      <!-- Student Life & Campus Infrastructure -->
-      <div class="container">
-         <div class="row justify-content-center align-items-center">
-            <div class="col-3 text-center d-md-block d-none">
-               <img src="assets/images/kimba1.png" alt="Kimba png">
-            </div>
-            <div class="col-md-9 text-md-start text-center mb-3" data-aos="fade-up" data-aos-duration="700">
-               <h3 class="heading-2">Student Life & Campus Infrastructure</h3>
-               <span class="heading-2-sub-heading">Creating Spaces for Growth and Well-being</span>
-            </div>
-         </div>
+         <!-- cards start-->
          <div class="row">
-            <div class="col-12 text-center">
-               <div class="campus-grid-container">
-                  <div class="campus-grid-1">
-                     <img src="assets/images/campus-infra.png" alt="..." class="img-fluid campus-grid-img">
-                  </div>
-                  <div class="campus-grid-2">
-                     <div class="d-flex" style="max-height: 50%;margin-bottom: 5px;">
-                        <img src="assets/images/sports.png" alt="..." class="img-fluid campus-grid-img me-1" style="max-width: 50%;">
-                        <img src="assets/images/lab.png" alt="..." class="img-fluid campus-grid-img" style="max-width: 50%;">
+            <div class="col-12 mt-3 mb-4">
+               <div class="d-flex overflow-auto p-3">
+                  <div class="card shadow border-0 me-3 custom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in Civil Engineering</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                     <img src="assets/images/bus.png" alt="..." class="img-fluid campus-grid-img" style="max-height: 50%;">
                   </div>
-                  <div class="campus-grid-3 d-none d-lg-block">
-                     <img src="assets/images/classroom.png" alt="..." class="img-fluid campus-grid-img">
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in Electronics & Telecomm. Engg.</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="campus-grid-4 d-none d-lg-block">
-                     <img src="assets/images/hostel.png" alt="..." class="img-fluid campus-grid-img mb-1 h-50">
-                     <img src="assets/images/library.png" alt="..." class="img-fluid campus-grid-img h-50">
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in computer Engineering</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="campus-grid-5 d-none d-lg-block">
-                     <img src="assets/images/campus-infra1.png" alt="..." class="img-fluid campus-grid-img">
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in Fire Engineering</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in Mechanical Engineering</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
-               <!-- <img src="assets/images/campus-infra.png" class="img-fluid rounded me-2" alt="...">
-               <img src="assets/images/classroom.png" class="img-fluid rounded me-2" alt="...">
-               <img src="assets/images/campus-infra1.png" class="img-fluid rounded me-2" alt="..."> -->
+               <!-- cards end -->
+            </div>
+         </div>
+         <!-- card end  -->
+         <div class="row mt-3 justify-content-between">
+            <div class="col-6 heading-3 text-start">
+               <h4>Under Graduate Programs<span>(35)</span></h4>
+            </div>
+            <div class="col-5 text-end">
+               <span class="view-more-text text-muted">View more</span>
+            </div>
+         </div>
+         <!-- cards start-->
+         <div class="row" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12 mt-3 mb-4">
+               <div class="d-flex overflow-auto p-3">
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in Civil Engineering</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in Electronics & Telecomm. Engg.</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in computer Engineering</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in Fire Engineering</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in Mechanical Engineering</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- cards end -->
+            </div>
+         </div>
+         <!-- card end  -->
+         <div class="row mt-3 justify-content-between">
+            <div class="col-6 heading-3 text-start">
+               <h4>Post Graduate Programs<span>(18)</span></h4>
+            </div>
+            <div class="col-5 text-end">
+               <span class="view-more-text text-muted">View more</span>
+            </div>
+         </div>
+         <!-- cards start-->
+         <div class="row" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12 mt-3 mb-4">
+               <div class="d-flex overflow-auto p-3">
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in Civil Engineering</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in Electronics & Telecomm. Engg.</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in computer Engineering</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in Fire Engineering</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card shadow border-0 me-3 cutom-card" style="width: 17rem;">
+                     <img src="assets/images/civil.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="row justify-content-between">
+                           <div class="col-10 text-start">
+                              <h5 class="card-title">Diploma in Mechanical Engineering</h5>
+                           </div>
+                           <div class="col-2">
+                              <i class="fa-solid fa-share-nodes share-icon"></i>
+                           </div>
+                        </div>
+                        <p class="card-text">
+                           <div class="row text-muted justify-content-start" style="font-size: 14px;">
+                              <div class="col-6">
+                                 <span><i class="fa-regular fa-calendar me-1 card-text-icon"></i> Full Time</span>
+                              </div>
+                              <div class="col-5"><i class="fa-regular fa-clock me-1 card-text-icon"></i> 3 Years</div>
+                           </div>
+                        </p>
+                        <!-- card buttons -->
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="custom-btn">Learn more</button>
+                              </div>
+                           </div>
+                           <div class="col-6">
+                              <div class="div d-grid">
+                                 <button class="border-0 custom-btn" style="color: #fff; background-color: #5c0f8b;">Apply now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- cards end -->
+            </div>
+         </div>
+         <!-- card end  -->
+         <!-- Diploma Programs end -->
+         <!-- button  -->
+         <div class="col-12 text-center">
+            <button class="custom-btn">View more domains</button>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Programs section end  -->
+<!-- Our Accreditations start  -->
+<section class="py-5 overflow-hidden">
+   <div class="container mb-5">
+      <div class="row justify-content-center align-items-center">
+         <div class="col-md-3 pe-0 text-center mb-3">
+            <h3 class="heading-2" data-aos="fade-right" data-aos-duration="1000">Our Accreditations</h3>
+         </div>
+         <div class="col-md-9 text-center grey-hover">
+            <img src="assets/images/dvv-logo.png" alt="..." width="100px" height="100px" class="p-2 mx-3 img-fluid" data-aos="flip-left" data-aos-duration="800">
+            <img src="assets/images/naaca-logo.png" alt="..." width="100px" height="100px" class="p-2 mx-3 img-fluid" data-aos="flip-left" data-aos-duration="800">
+            <img src="assets/images/naac-logo.png" alt="..." width="100px" height="100px" class="p-2 mx-3 img-fluid" data-aos="flip-left" data-aos-duration="800">
+            <img src="assets/images/nba-logo.png" alt="..." width="100px" height="100px" class="p-2 mx-3 img-fluid" data-aos="flip-left" data-aos-duration="800">
+            <img src="assets/images/aicte-logo.png" alt="..." width="100px" height="100px" class="p-2 mx-3 img-fluid" data-aos="flip-left" data-aos-duration="800">
+            <img src="assets/images/ariia-logo.png" alt="..." width="100px" height="100px" class="p-2 mx-3 img-fluid" data-aos="flip-left" data-aos-duration="800">
+         </div>
+      </div>
+   </div>
+   <!-- Student Life & Campus Infrastructure -->
+   <div class="container">
+      <div class="row justify-content-center align-items-center">
+         <div class="col-3 text-center d-md-block d-none">
+            <img src="assets/images/kimba1.png" alt="Kimba png">
+         </div>
+         <div class="col-md-9 text-md-start text-center mb-3" data-aos="fade-up" data-aos-duration="700">
+            <h3 class="heading-2">Student Life & Campus Infrastructure</h3>
+            <span class="heading-2-sub-heading">Creating Spaces for Growth and Well-being</span>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-12 text-center">
+            <div class="campus-grid-container">
+               <div class="campus-grid-1">
+                  <img src="assets/images/campus-infra.png" alt="..." class="img-fluid campus-grid-img">
+               </div>
+               <div class="campus-grid-2">
+                  <div class="d-flex" style="max-height: 50%;margin-bottom: 5px;">
+                     <img src="assets/images/sport.png" alt="..." class="img-fluid campus-grid-img me-1" style="max-width: 50%;">
+                     <img src="assets/images/lab.png" alt="..." class="img-fluid campus-grid-img" style="max-width: 50%;">
+                  </div>
+                  <img src="assets/images/bus.png" alt="..." class="img-fluid campus-grid-img" style="max-height: 50%;">
+               </div>
+               <div class="campus-grid-3 d-none d-lg-block">
+                  <img src="assets/images/classroom.png" alt="..." class="img-fluid campus-grid-img">
+               </div>
+               <div class="campus-grid-4 d-none d-lg-block">
+                  <img src="assets/images/hostel.png" alt="..." class="img-fluid campus-grid-img mb-1 h-50">
+                  <img src="assets/images/library.png" alt="..." class="img-fluid campus-grid-img h-50">
+               </div>
+               <div class="campus-grid-5 d-none d-lg-block">
+                  <img src="assets/images/campus-infra1.png" alt="..." class="img-fluid campus-grid-img">
+               </div>
+            </div>
             </div>
          </div>
       </div>
@@ -1428,11 +1392,21 @@ style="max-height: 400px"
                </div>
             </div>
             <div class="col-md-7 align-self-end">
-               <div class="d-flex overflow-auto gap-2">
-                  <img src="assets/images/dhamal-dandiya.png" class="img-fluid rounded" alt="..." style="max-width: 24rem; max-height: 24rem">
-                  <img src="assets/images/jallosh.png" class="img-fluid rounded" alt="..." style="max-width: 24rem; max-height: 24rem">
-                  <img src="assets/images/shivaji-jayanti.png" class="img-fluid rounded" alt="..." style="max-width: 24rem; max-height: 24rem">
+               <div class="myslider my-3">
+                  <div class="myslider-track">
+                     <img src="assets/images/dhamal-dandiya.png" class="img-fluid rounded position-relative" alt="..." style="max-width: 24rem; max-height: 24rem">
+                        <div class="bg-white position-absolute bottom-0 overflow-hidden fs-4 ps-3 pt-2" style="width: 80%;height:20%;right: 5px;border-top-left-radius:8px;font-weight: 600;">jallosh</div>
+                     <img src="assets/images/jallosh.png" class="img-fluid rounded position-relative" alt="..." style="max-width: 24rem; max-height: 24rem">
+                     <img src="assets/images/shivaji-jayanti.png" class="img-fluid rounded" alt="..." style="max-width: 24rem; max-height: 24rem">
+                  </div>
+                  <div class="myslider-track">
+                     <img src="assets/images/jallosh.png" class="img-fluid rounded" alt="..." style="max-width: 24rem; max-height: 24rem">
+                     <img src="assets/images/shivaji-jayanti.png" class="img-fluid rounded" alt="..." style="max-width: 24rem; max-height: 24rem">
+                     <img src="assets/images/dhamal-dandiya.png" class="img-fluid rounded" alt="..." style="max-width: 24rem; max-height: 24rem">
+                  </div>
                </div>
+                  
+               
             </div>
             <!-- button and next icon  -->
             <div class="col-6 text-end">
@@ -1501,10 +1475,10 @@ style="max-height: 400px"
                <div class="d-flex overflow-auto">
                   <div class="card me-2" style="max-width: 350px;">
                      <div class="row g-0 align-items-center">
-                        <div class="col-md-7">
+                        <div class="col-7">
                            <img src="assets/images/poorna.png" class="img-fluid rounded-start" alt="...">
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-4">
                            <div class="card-body">
                               <h5 class="card-title" style="font-size: 16px;">Purva Pantane</h5>
                               <p class="card-text" style="font-size: 14px;">Supply chain consulting practice lead</p>
@@ -1514,10 +1488,10 @@ style="max-height: 400px"
                   </div>
                   <div class="card me-2" style="max-width: 350px;">
                      <div class="row g-0 align-items-center">
-                        <div class="col-md-7">
+                        <div class="col-7">
                            <img src="assets/images/somya.png" class="img-fluid rounded-start" alt="...">
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-4">
                            <div class="card-body">
                               <h5 class="card-title" style="font-size: 16px;">Saumya Rai</h5>
                               <p class="card-text" style="font-size: 14px;">Judicial Magistrate</p>
@@ -1527,10 +1501,10 @@ style="max-height: 400px"
                   </div>
                   <div class="card me-2" style="max-width: 350px;">
                      <div class="row g-0 align-items-center">
-                        <div class="col-md-7">
+                        <div class="col-7">
                            <img src="assets/images/shreyash.png" class="img-fluid rounded-start" alt="...">
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-4">
                            <div class="card-body">
                               <h5 class="card-title" style="font-size: 16px;">Dr. Shreyash Pannare</h5>
                               <p class="card-text" style="font-size: 14px;">Exclusive Director</p>

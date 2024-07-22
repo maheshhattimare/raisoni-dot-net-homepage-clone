@@ -192,6 +192,33 @@
 }
 /* student life & campus infra end */
 
+/* Our Campus Events start */
+.myslider {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+}
+.myslider .myslider-track img {
+  width: 100%;
+  padding: 0 5px;
+  cursor: pointer;
+}
+@keyframes slide-img {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.myslider .myslider-track {
+  animation: 5s slide-img linear infinite;
+  animation-delay: 3s;
+}
+/* Our Campus Events end */
+
 /* impeccable placement section start*/
 .slider {
   width: 100%;
@@ -439,6 +466,12 @@ footer {
   border: 1px solid #5c0f8b;
   scale: 101%;
 }
+.breadcrumb-item-hover li{
+  font-size: 1rem;
+}
+.breadcrumb-item-hover li > a{
+  transition: color 0.2s ease;
+}
 .breadcrumb-item-hover li > a:hover {
   color: red !important;
 }
@@ -479,7 +512,6 @@ footer {
   max-width: 60px;
 }
 /* safety and security end  */
-
 
 /* media queries  */
 @media screen and (max-width: 576px) {
@@ -528,6 +560,9 @@ footer {
   .safety-card div {
     min-height: 300px !important;
   }
+  .breadcrumb-item-hover li{
+    font-size: 0.6rem;
+  }
 }
 @media screen and (max-width: 992px) {
   .navbar-nav {
@@ -574,6 +609,17 @@ footer {
     margin-top: -5px;
   }
   /* campus life end  */
+  .breadcrumb-item-hover li{
+    font-size: 0.8rem;
+  }
+}
+ .bg-img {
+    opacity: 0.9px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),url(assets/images/ghrce3.png);
+    background-size: contain;
+    background-attachment: fixed;
+    height: 250px;
+    width: 100%;
 }
 
 /* contact us page css start  */
@@ -595,5 +641,6 @@ font-weight: 500;
   color: #6D6F70;
   font-size: 0.9rem;
   }
+
 
 

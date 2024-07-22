@@ -17,9 +17,9 @@ position: relative;
 top: -5px;
 }
 
-a:hover{
-    color: #7030a0;
-}
+.breadcrumb-item a:hover{
+        color: #FF5100 !important;
+    }
 
 .navbar-nav li > a {
   margin-right: 10px;
