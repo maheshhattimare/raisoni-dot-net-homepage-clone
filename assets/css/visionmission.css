@@ -12,11 +12,7 @@
    
 }
 .bg-img {
-    opacity: 0.9px;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),url(assets/images/ghrce3.png);
-    background-size: contain;
-    background-attachment: fixed;
-    height: 250px;
+    height: 40vh;
     width: 100%;
 }
 a{
