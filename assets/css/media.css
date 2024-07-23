@@ -75,6 +75,25 @@ button.btn:hover {
   ) !important;
 }
 
+.navbar-nav li > a {
+  margin-right: 10px;
+}
+.lg-nav-item-list a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333 !important;
+  border: 0;
+  transition: all 0.2s ease;
+}
+.lg-nav-item-list a:hover {
+  color: #5c0f8b !important;
+  background-color: rgb(247, 245, 245);
+}
+
+.lg-nav-item:hover .lg-nav-item-list {
+  display: block !important;
+}
+
 .custom-btn {
   font-size: 14px;
   padding: 8px 10px;
@@ -149,6 +168,8 @@ section > braedcrumb-section {
   }
 }
 
+
+
 @media only screen and (max-width: 992px) {
   .button-group {
     flex-direction: column;
@@ -177,24 +198,7 @@ section > braedcrumb-section {
     font-size: 14px;
   }
 
-  .navbar-nav li > a {
-    margin-right: 10px;
-  }
-  .lg-nav-item-list a {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #333 !important;
-    border: 0;
-    transition: all 0.2s ease;
-  }
-  .lg-nav-item-list a:hover {
-    color: #5c0f8b !important;
-    background-color: rgb(247, 245, 245);
-  }
   
-  .lg-nav-item:hover .lg-nav-item-list {
-    display: block !important;
-  }
 }
 
 @media only screen and (max-width: 768px) {
